@@ -1,7 +1,6 @@
-# 启动简单的HTTP服务器来预览网站
+# 简单的HTTP服务器启动脚本
+Write-Host "启动golfbagfactories-website服务器..."
+Write-Host "请访问 http://localhost:8888 查看网站"
 
-Write-Host "启动HTTP服务器..."
-Write-Host "请在浏览器中访问 http://localhost:8000 查看网站"
-
-# 启动Python HTTP服务器
-python -m http.server 8000 --directory .
+# 使用Python启动HTTP服务器在8888端口
+python -m http.server 8888 --directory .
