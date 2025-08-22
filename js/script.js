@@ -47,71 +47,103 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// 语言切换功能
-if (languageToggle && languageDropdown) {
-    languageToggle.addEventListener('click', function(e) {
-        e.stopPropagation();
-        languageDropdown.classList.toggle('show');
-    });
-}
-
-// 点击其他区域关闭语言下拉菜单
-document.addEventListener('click', function() {
-    if (languageDropdown && !languageDropdown.classList.contains('hidden')) {
-        languageDropdown.classList.remove('show');
-    }
-});
-
-// 防止点击下拉菜单内部时关闭菜单
-if (languageDropdown) {
-    languageDropdown.addEventListener('click', function(e) {
-        e.stopPropagation();
-    });
-}
-
-// 语言选项点击事件
-languageOptions.forEach(option => {
-    option.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        // 移除所有语言选项的active类
-        languageOptions.forEach(opt => opt.classList.remove('active'));
-        
-        // 为当前选中的语言添加active类
-        this.classList.add('active');
-        
-        // 更新语言切换按钮的显示文本
-        if (languageToggle) {
-            const languageName = this.textContent.trim();
-            languageToggle.querySelector('.language-name').textContent = languageName;
-        }
-        
-        // 关闭下拉菜单
-        if (languageDropdown) {
-            languageDropdown.classList.remove('show');
-        }
-        
-        // 这里可以添加实际的语言切换逻辑
-        // 例如，切换页面内容的语言
-        const languageCode = this.getAttribute('data-lang');
-        switchLanguage(languageCode);
-    });
-});
+// 多语言切换功能
+// 默认语言为英文
+let currentLang = 'en'; 
+const languages = [
+  { code: 'en', name: 'English' },
+  { code: 'es', name: 'Español' },
+  { code: 'fr', name: 'Français' },
+  { code: 'de', name: 'Deutsch' },
+  { code: 'zh', name: '中文' },
+  { code: 'ja', name: '日本語' },
+  { code: 'pt', name: 'Português' },
+  { code: 'ru', name: 'Русский' }
+];
 
 // 语言切换函数
 function switchLanguage(langCode) {
-    // 获取所有带有data-lang属性的元素
-    const elements = document.querySelectorAll('[data-lang]');
-    
-    elements.forEach(element => {
-        // 显示当前语言的内容，隐藏其他语言的内容
-        if (element.getAttribute('data-lang') === langCode) {
-            element.style.display = 'block';
-        } else {
-            element.style.display = 'none';
-        }
-    });
+  if (!translations[langCode]) {
+    console.error(`Translation for ${langCode} not found`);
+    return;
+  }
+  
+  // 更新页面上的所有文本
+  document.querySelectorAll('[data-lang-key]').forEach(element => {
+    const key = element.getAttribute('data-lang-key');
+    if (translations[langCode][key]) {
+      element.textContent = translations[langCode][key];
+    }
+  });
+  
+  // 更新当前语言
+  currentLang = langCode;
+  localStorage.setItem('preferredLanguage', langCode);
+  
+  // 更新语言选择器显示
+  const selector = document.getElementById('language-selector');
+  if (selector) {
+    selector.textContent = languages.find(lang => lang.code === langCode)?.name || langCode;
+  }
+  
+  // 触发语言变更事件
+  document.dispatchEvent(new CustomEvent('languageChanged', { detail: { lang: langCode } }));
 }
+
+// 初始化语言选择器
+function initLanguageSelector() {
+  const selector = document.getElementById('language-selector');
+  const dropdown = document.getElementById('language-dropdown');
+  
+  if (selector && dropdown) {
+    // 清空现有选项
+    dropdown.innerHTML = '';
+    
+    // 添加语言选项
+    languages.forEach(lang => {
+      const option = document.createElement('div');
+      option.className = 'language-option';
+      option.setAttribute('data-lang-code', lang.code);
+      option.textContent = lang.name;
+      
+      // 添加点击事件
+      option.addEventListener('click', () => {
+        switchLanguage(lang.code);
+        dropdown.classList.add('hidden');
+      });
+      
+      dropdown.appendChild(option);
+    });
+    
+    // 切换下拉菜单显示
+    selector.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdown.classList.toggle('hidden');
+    });
+    
+    // 点击其他地方关闭下拉菜单
+    document.addEventListener('click', (e) => {
+      if (!selector.contains(e.target) && !dropdown.contains(e.target)) {
+        dropdown.classList.add('hidden');
+      }
+    });
+  }
+  
+  // 检查本地存储中的首选语言
+  const savedLang = localStorage.getItem('preferredLanguage');
+  if (savedLang && languages.some(lang => lang.code === savedLang)) {
+    switchLanguage(savedLang);
+  } else {
+    // 使用浏览器语言或默认语言
+    const browserLang = navigator.language.split('-')[0];
+    if (languages.some(lang => lang.code === browserLang)) {
+      switchLanguage(browserLang);
+    }
+  }
+}
+
+// 初始化语言选择器
+initLanguageSelector();
 
 // 初始化页面
 window.addEventListener('DOMContentLoaded', function() {

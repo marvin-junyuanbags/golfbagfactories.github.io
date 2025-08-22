@@ -68,13 +68,13 @@
 
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.html" class="nav-link active font-medium hover:text-primary transition-colors">Home</a>
-                    <a href="products.html" class="nav-link font-medium hover:text-primary transition-colors">Golf Bags</a>
-                    <a href="custom-solutions.html" class="nav-link font-medium hover:text-primary transition-colors">Custom Solutions</a>
-                    <a href="manufacturing.html" class="nav-link font-medium hover:text-primary transition-colors">Manufacturing</a>
-                    <a href="about.html" class="nav-link font-medium hover:text-primary transition-colors">About Us</a>
-                    <a href="blog.html" class="nav-link font-medium hover:text-primary transition-colors">Blog</a>
-                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                    <a href="index.html" class="nav-link active font-medium hover:text-primary transition-colors" data-lang-key="nav_home">Home</a>
+                    <a href="products.html" class="nav-link font-medium hover:text-primary transition-colors" data-lang-key="nav_products">Golf Bags</a>
+                    <a href="custom-solutions.html" class="nav-link font-medium hover:text-primary transition-colors" data-lang-key="nav_custom">Custom Solutions</a>
+                    <a href="manufacturing.html" class="nav-link font-medium hover:text-primary transition-colors" data-lang-key="nav_manufacturing">Manufacturing</a>
+                    <a href="about.html" class="nav-link font-medium hover:text-primary transition-colors" data-lang-key="nav_about">About Us</a>
+                    <a href="blog.html" class="nav-link font-medium hover:text-primary transition-colors" data-lang-key="nav_blog">Blog</a>
+                    <a href="contact.html" class="btn-primary" data-lang-key="nav_contact">Contact Us</a>
                 </div>
 
                 <!-- Language Selector -->
@@ -89,6 +89,9 @@
                         <a href="#" class="language-option" data-lang="fr">Français</a>
                         <a href="#" class="language-option" data-lang="de">Deutsch</a>
                         <a href="#" class="language-option" data-lang="zh">中文</a>
+                        <a href="#" class="language-option" data-lang="ja">日本語</a>
+                        <a href="#" class="language-option" data-lang="pt">Português</a>
+                        <a href="#" class="language-option" data-lang="ru">Русский</a>
                     </div>
                 </div>
 
@@ -102,15 +105,15 @@
         </div>
 
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
-            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
-                <a href="index.html" class="font-medium py-2 text-primary transition-colors">Home</a>
-                <a href="products.html" class="font-medium py-2 hover:text-primary transition-colors">Golf Bags</a>
-                <a href="custom-solutions.html" class="font-medium py-2 hover:text-primary transition-colors">Custom Solutions</a>
-                <a href="manufacturing.html" class="font-medium py-2 hover:text-primary transition-colors">Manufacturing</a>
-                <a href="about.html" class="font-medium py-2 hover:text-primary transition-colors">About Us</a>
-                <a href="blog.html" class="font-medium py-2 hover:text-primary transition-colors">Blog</a>
-                <a href="contact.html" class="btn-primary text-center">Contact Us</a>
+                <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+                    <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                        <a href="index.html" class="font-medium py-2 text-primary transition-colors" data-lang-key="nav_home">Home</a>
+                        <a href="products.html" class="font-medium py-2 hover:text-primary transition-colors" data-lang-key="nav_products">Golf Bags</a>
+                        <a href="custom-solutions.html" class="font-medium py-2 hover:text-primary transition-colors" data-lang-key="nav_custom">Custom Solutions</a>
+                        <a href="manufacturing.html" class="font-medium py-2 hover:text-primary transition-colors" data-lang-key="nav_manufacturing">Manufacturing</a>
+                        <a href="about.html" class="font-medium py-2 hover:text-primary transition-colors" data-lang-key="nav_about">About Us</a>
+                        <a href="blog.html" class="font-medium py-2 hover:text-primary transition-colors" data-lang-key="nav_blog">Blog</a>
+                        <a href="contact.html" class="btn-primary text-center" data-lang-key="nav_contact">Contact Us</a>
                 <div class="language-selector">
                     <button id="mobile-language-toggle" class="flex items-center space-x-1 text-dark hover:text-primary transition-colors w-full justify-between">
                         <span>Language</span>
@@ -127,31 +130,31 @@
             <div class="flex flex-col lg:flex-row items-center">
                 <div class="lg:w-1/2 mb-10 lg:mb-0 fade-in">
                     <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-dark leading-tight mb-6">
-                        Professional Golf Bag <span class="text-primary">Manufacturer</span>
+                        <span data-lang-key="hero_title">Professional Golf Bag <span class="text-primary">Manufacturer</span></span>
                     </h1>
-                    <p class="text-lg text-gray-600 max-w-2xl mb-8">
+                    <p class="text-lg text-gray-600 max-w-2xl mb-8" data-lang-key="hero_subtitle">
                         We provide high-quality custom golf bags and accessories for brands worldwide. OEM/ODM services with competitive pricing and on-time delivery.
                     </p>
                     <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
                         <a href="contact.html" class="btn-primary inline-flex items-center justify-center">
-                            Get a Quote <i class="fa fa-arrow-right ml-2"></i>
+                            <span data-lang-key="hero_cta1">Get a Quote</span> <i class="fa fa-arrow-right ml-2"></i>
                         </a>
                         <a href="products.html" class="btn-secondary inline-flex items-center justify-center">
-                            View Products <i class="fa fa-shopping-bag ml-2"></i>
+                            <span data-lang-key="hero_cta2">View Products</span> <i class="fa fa-shopping-bag ml-2"></i>
                         </a>
                     </div>
                     <div class="flex items-center space-x-6 mt-10">
                         <div class="flex items-center space-x-2">
                             <i class="fa fa-check-circle text-primary text-xl"></i>
-                            <span class="text-gray-700">10+ Years Experience</span>
+                            <span class="text-gray-700" data-lang-key="hero_feature1">10+ Years Experience</span>
                         </div>
                         <div class="flex items-center space-x-2">
                             <i class="fa fa-check-circle text-primary text-xl"></i>
-                            <span class="text-gray-700">BSCI & ISO9001 Certified</span>
+                            <span class="text-gray-700" data-lang-key="hero_feature2">BSCI & ISO9001 Certified</span>
                         </div>
                         <div class="flex items-center space-x-2">
                             <i class="fa fa-check-circle text-primary text-xl"></i>
-                            <span class="text-gray-700">Global Shipping</span>
+                            <span class="text-gray-700" data-lang-key="hero_feature3">Global Shipping</span>
                         </div>
                     </div>
                 </div>
@@ -205,8 +208,8 @@
                     <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                         <i class="fa fa-flask text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Material Innovation</h3>
-                    <p class="text-gray-600">We continuously develop new materials and technologies to provide lightweight, durable, and water-resistant golf bag solutions.</p>
+                    <h3 class="text-xl font-bold mb-3" data-lang-key="service_material_innovation_title">Material Innovation</h3>
+                    <p class="text-gray-600" data-lang-key="service_material_innovation_desc">We continuously develop new materials and technologies to provide lightweight, durable, and water-resistant golf bag solutions.</p>
                 </div>
 
                 <!-- Service Card 5 -->
@@ -214,8 +217,8 @@
                     <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                         <i class="fa fa-box text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Private Label</h3>
-                    <p class="text-gray-600">Complete private label services including custom packaging, instruction manuals, and branding materials for your golf products.</p>
+                    <h3 class="text-xl font-bold mb-3" data-lang-key="service_private_label_title">Private Label</h3>
+                    <p class="text-gray-600" data-lang-key="service_private_label_desc">Complete private label services including custom packaging, instruction manuals, and branding materials for your golf products.</p>
                 </div>
 
                 <!-- Service Card 6 -->
@@ -223,8 +226,8 @@
                     <div class="w-14 h-14 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                         <i class="fa fa-truck text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Global Logistics</h3>
-                    <p class="text-gray-600">Flexible shipping solutions to ensure your golf products are delivered safely and on time to destinations worldwide.</p>
+                    <h3 class="text-xl font-bold mb-3" data-lang-key="service_global_logistics_title">Global Logistics</h3>
+                    <p class="text-gray-600" data-lang-key="service_global_logistics_desc">Flexible shipping solutions to ensure your golf products are delivered safely and on time to destinations worldwide.</p>
                 </div>
             </div>
         </div>
@@ -235,11 +238,11 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-12 fade-in">
                 <div>
-                    <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4">Featured Golf Bags</h2>
-                    <p class="text-gray-600 max-w-2xl">Explore our selection of high-quality golf bags that showcase our manufacturing capabilities.</p>
+                    <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4" data-lang-key="products_title">Featured Golf Bags</h2>
+                    <p class="text-gray-600 max-w-2xl" data-lang-key="products_subtitle">Explore our selection of high-quality golf bags that showcase our manufacturing capabilities.</p>
                 </div>
                 <a href="products.html" class="mt-4 md:mt-0 text-primary font-medium hover:underline inline-flex items-center">
-                    View All Products <i class="fa fa-long-arrow-right ml-2"></i>
+                    <span data-lang-key="view_all_products">View All Products</span> <i class="fa fa-long-arrow-right ml-2"></i>
                 </a>
             </div>
 
@@ -248,9 +251,9 @@
                 <div class="product-card fade-in">
                     <img src="images/网站配图生成 (6).png" alt="Premium Golf Cart Bag" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2">Premium Cart Bag</h3>
-                        <p class="text-gray-600 text-sm mb-4">Durable cart bag with multiple pockets and padded shoulder strap.</p>
-                        <a href="products.html" class="text-primary font-medium hover:underline">Learn More</a>
+                        <h3 class="text-lg font-bold mb-2" data-lang-key="product_cart_bag_title">Premium Cart Bag</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-lang-key="product_cart_bag_desc">Durable cart bag with multiple pockets and padded shoulder strap.</p>
+                        <a href="products.html" class="text-primary font-medium hover:underline" data-lang-key="learn_more">Learn More</a>
                     </div>
                 </div>
 
@@ -258,9 +261,9 @@
                 <div class="product-card fade-in">
                     <img src="images/网站配图生成 (7).png" alt="Lightweight Golf Stand Bag" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2">Lightweight Stand Bag</h3>
-                        <p class="text-gray-600 text-sm mb-4">Ultra-lightweight stand bag with automatic legs and 4-way top.</p>
-                        <a href="products.html" class="text-primary font-medium hover:underline">Learn More</a>
+                        <h3 class="text-lg font-bold mb-2" data-lang-key="product_stand_bag_title">Lightweight Stand Bag</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-lang-key="product_stand_bag_desc">Ultra-lightweight stand bag with automatic legs and 4-way top.</p>
+                        <a href="products.html" class="text-primary font-medium hover:underline" data-lang-key="learn_more">Learn More</a>
                     </div>
                 </div>
 
@@ -268,9 +271,9 @@
                 <div class="product-card fade-in">
                     <img src="images/网站配图生成 (8).png" alt="Professional Golf Tour Bag" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2">Professional Tour Bag</h3>
-                        <p class="text-gray-600 text-sm mb-4">Premium tour bag with full-length dividers and ample storage.</p>
-                        <a href="products.html" class="text-primary font-medium hover:underline">Learn More</a>
+                        <h3 class="text-lg font-bold mb-2" data-lang-key="product_tour_bag_title">Professional Tour Bag</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-lang-key="product_tour_bag_desc">Premium tour bag with full-length dividers and ample storage.</p>
+                        <a href="products.html" class="text-primary font-medium hover:underline" data-lang-key="learn_more">Learn More</a>
                     </div>
                 </div>
 
@@ -278,9 +281,9 @@
                 <div class="product-card fade-in">
                     <img src="images/网站配图生成 (9).png" alt="Compact Golf Carry Bag" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-lg font-bold mb-2">Compact Carry Bag</h3>
-                        <p class="text-gray-600 text-sm mb-4">Compact and lightweight carry bag for golfers on the go.</p>
-                        <a href="products.html" class="text-primary font-medium hover:underline">Learn More</a>
+                        <h3 class="text-lg font-bold mb-2" data-lang-key="product_carry_bag_title">Compact Carry Bag</h3>
+                        <p class="text-gray-600 text-sm mb-4" data-lang-key="product_carry_bag_desc">Compact and lightweight carry bag for golfers on the go.</p>
+                        <a href="products.html" class="text-primary font-medium hover:underline" data-lang-key="learn_more">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -292,8 +295,8 @@
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2 order-2 lg:order-1 fade-in">
-                    <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-6">Advanced Manufacturing Capabilities</h2>
-                    <p class="text-gray-600 mb-8">
+                    <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-6" data-lang-key="manufacturing_title">Advanced Manufacturing Capabilities</h2>
+                    <p class="text-gray-600 mb-8" data-lang-key="manufacturing_desc">
                         With over 10 years of experience in golf bag manufacturing, we have established a comprehensive production system that ensures consistent quality and efficiency.
                     </p>
                     <ul class="space-y-4">
@@ -302,8 +305,8 @@
                                 <i class="fa fa-check text-primary"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-1">Modern Production Lines</h3>
-                                <p class="text-gray-600">Our factory is equipped with advanced sewing machines and production equipment to handle large volume orders efficiently.</p>
+                                <h3 class="text-lg font-bold mb-1" data-lang-key="manufacturing_line_title">Modern Production Lines</h3>
+                                <p class="text-gray-600" data-lang-key="manufacturing_line_desc">Our factory is equipped with advanced sewing machines and production equipment to handle large volume orders efficiently.</p>
                             </div>
                         </li>
                         <li class="flex items-start space-x-4">
@@ -311,8 +314,8 @@
                                 <i class="fa fa-check text-primary"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-1">Quality Control System</h3>
-                                <p class="text-gray-600">We implement strict quality control at every stage of production to ensure all products meet the highest standards.</p>
+                                <h3 class="text-lg font-bold mb-1" data-lang-key="quality_control_title">Quality Control System</h3>
+                                <p class="text-gray-600" data-lang-key="quality_control_desc">We implement strict quality control at every stage of production to ensure all products meet the highest standards.</p>
                             </div>
                         </li>
                         <li class="flex items-start space-x-4">
@@ -320,13 +323,13 @@
                                 <i class="fa fa-check text-primary"></i>
                             </div>
                             <div>
-                                <h3 class="text-lg font-bold mb-1">Skilled Workforce</h3>
-                                <p class="text-gray-600">Our team of experienced craftsmen and technicians are dedicated to producing high-quality golf bags with attention to detail.</p>
+                                <h3 class="text-lg font-bold mb-1" data-lang-key="skilled_workforce_title">Skilled Workforce</h3>
+                                <p class="text-gray-600" data-lang-key="skilled_workforce_desc">Our team of experienced craftsmen and technicians are dedicated to producing high-quality golf bags with attention to detail.</p>
                             </div>
                         </li>
                     </ul>
                     <a href="manufacturing.html" class="btn-primary mt-8 inline-flex items-center">
-                        Learn About Our Process <i class="fa fa-arrow-right ml-2"></i>
+                        <span data-lang-key="learn_process">Learn About Our Process</span> <i class="fa fa-arrow-right ml-2"></i>
                     </a>
                 </div>
                 <div class="lg:w-1/2 order-1 lg:order-2 fade-in">
@@ -344,8 +347,8 @@
     <section class="py-20 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4">Why Choose Our Golf Bag Manufacturing</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">We provide exceptional value to our clients through quality products, competitive pricing, and excellent service.</p>
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4" data-lang-key="why_choose_title">Why Choose Our Golf Bag Manufacturing</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto" data-lang-key="why_choose_subtitle">We provide exceptional value to our clients through quality products, competitive pricing, and excellent service.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -354,8 +357,8 @@
                     <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                         <i class="fa fa-certificate text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Quality Assurance</h3>
-                    <p class="text-gray-600">We follow strict quality control processes to ensure every golf bag meets international standards.</p>
+                    <h3 class="text-xl font-bold mb-3" data-lang-key="feature_quality_title">Quality Assurance</h3>
+                    <p class="text-gray-600" data-lang-key="feature_quality_desc">We follow strict quality control processes to ensure every golf bag meets international standards.</p>
                 </div>
 
                 <!-- Feature 2 -->
@@ -363,8 +366,8 @@
                     <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                         <i class="fa fa-money text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Competitive Pricing</h3>
-                    <p class="text-gray-600">Factory-direct pricing with no middlemen, allowing you to maximize your profit margins.</p>
+                    <h3 class="text-xl font-bold mb-3" data-lang-key="feature_pricing_title">Competitive Pricing</h3>
+                    <p class="text-gray-600" data-lang-key="feature_pricing_desc">Factory-direct pricing with no middlemen, allowing you to maximize your profit margins.</p>
                 </div>
 
                 <!-- Feature 3 -->
@@ -372,8 +375,8 @@
                     <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                         <i class="fa fa-calendar-check-o text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">On-Time Delivery</h3>
-                    <p class="text-gray-600">We pride ourselves on meeting delivery deadlines to ensure your business operations run smoothly.</p>
+                    <h3 class="text-xl font-bold mb-3" data-lang-key="feature_delivery_title">On-Time Delivery</h3>
+                    <p class="text-gray-600" data-lang-key="feature_delivery_desc">We pride ourselves on meeting delivery deadlines to ensure your business operations run smoothly.</p>
                 </div>
 
                 <!-- Feature 4 -->
@@ -381,8 +384,8 @@
                     <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
                         <i class="fa fa-comments text-primary text-2xl"></i>
                     </div>
-                    <h3 class="text-xl font-bold mb-3">Excellent Support</h3>
-                    <p class="text-gray-600">Our dedicated customer service team provides prompt and helpful support throughout your project.</p>
+                    <h3 class="text-xl font-bold mb-3" data-lang-key="feature_support_title">Excellent Support</h3>
+                    <p class="text-gray-600" data-lang-key="feature_support_desc">Our dedicated customer service team provides prompt and helpful support throughout your project.</p>
                 </div>
             </div>
         </div>
@@ -392,8 +395,8 @@
     <section class="py-20 bg-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4">What Our Clients Say</h2>
-                <p class="text-gray-600 max-w-2xl mx-auto">Hear from businesses that have partnered with us for their golf bag manufacturing needs.</p>
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4" data-lang-key="testimonials_title">What Our Clients Say</h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto" data-lang-key="testimonials_subtitle">Hear from businesses that have partnered with us for their golf bag manufacturing needs.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -466,11 +469,11 @@
     <!-- CTA Section -->
     <section class="py-16 bg-primary text-white">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Start Your Golf Bag Project?</h2>
-            <p class="text-lg mb-8 max-w-2xl mx-auto">Contact our team today to discuss your custom golf bag requirements and get a free quote.</p>
-            <a href="contact.html" class="bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition-colors shadow-lg inline-block">
-                Get a Free Quote
-            </a>
+            <h2 class="text-2xl md:text-3xl font-bold mb-4" data-lang-key="cta_title">Ready to Start Your Golf Bag Project?</h2>
+                    <p class="text-lg mb-8 max-w-2xl mx-auto" data-lang-key="cta_desc">Contact our team today to discuss your custom golf bag requirements and get a free quote.</p>
+                    <a href="contact.html" class="bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition-colors shadow-lg inline-block" data-lang-key="cta_button">
+                        Get a Free Quote
+                    </a>
         </div>
     </section>
 
@@ -480,12 +483,12 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
                 <div>
                     <div class="flex items-center space-x-2 mb-4">
-                        <i class="fa fa-golf-ball text-primary text-2xl"></i>
-                        <span class="text-xl font-bold">GolfBagFactories</span>
-                    </div>
-                    <p class="text-gray-400 mb-6">
-                        Professional manufacturer of high-quality golf bags and accessories with OEM/ODM services for brands worldwide.
-                    </p>
+                            <i class="fa fa-golf-ball text-primary text-2xl"></i>
+                            <span class="text-xl font-bold" data-lang-key="brand_name">GolfBagFactories</span>
+                        </div>
+                        <p class="text-gray-400 mb-6" data-lang-key="footer_desc">
+                            Professional manufacturer of high-quality golf bags and accessories with OEM/ODM services for brands worldwide.
+                        </p>
                     <div class="flex space-x-4">
                         <a href="https://www.pinterest.com/keepperfectgolf/" class="social-icon" target="_blank">
                             <i class="fa fa-pinterest"></i>
@@ -503,59 +506,56 @@
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-3">
-                        <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
-                        <li><a href="products.html" class="hover:text-primary transition-colors">Golf Bags</a></li>
-                        <li><a href="custom-solutions.html" class="hover:text-primary transition-colors">Custom Solutions</a></li>
-                        <li><a href="manufacturing.html" class="hover:text-primary transition-colors">Manufacturing</a></li>
-                        <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
-                        <li><a href="blog.html" class="hover:text-primary transition-colors">Blog</a></li>
-                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
-                    </ul>
+                    <h3 class="text-lg font-bold mb-4" data-lang-key="quick_links">Quick Links</h3>
+                        <ul class="space-y-3">
+                            <li><a href="index.html" class="hover:text-primary transition-colors" data-lang-key="nav_home">Home</a></li>
+                            <li><a href="products.html" class="hover:text-primary transition-colors" data-lang-key="nav_products">Golf Bags</a></li>
+                            <li><a href="custom-solutions.html" class="hover:text-primary transition-colors" data-lang-key="nav_custom">Custom Solutions</a></li>
+                            <li><a href="manufacturing.html" class="hover:text-primary transition-colors" data-lang-key="nav_manufacturing">Manufacturing</a></li>
+                            <li><a href="about.html" class="hover:text-primary transition-colors" data-lang-key="nav_about">About Us</a></li>
+                            <li><a href="blog.html" class="hover:text-primary transition-colors" data-lang-key="nav_blog">Blog</a></li>
+                            <li><a href="contact.html" class="hover:text-primary transition-colors" data-lang-key="nav_contact">Contact</a></li>
+                        </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-bold mb-4">Our Products</h3>
-                    <ul class="space-y-3">
-                        <li><a href="products.html" class="hover:text-primary transition-colors">Cart Bags</a></li>
-                        <li><a href="products.html" class="hover:text-primary transition-colors">Stand Bags</a></li>
-                        <li><a href="products.html" class="hover:text-primary transition-colors">Tour Bags</a></li>
-                        <li><a href="products.html" class="hover:text-primary transition-colors">Carry Bags</a></li>
-                        <li><a href="products.html" class="hover:text-primary transition-colors">Golf Accessories</a></li>
-                        <li><a href="products.html" class="hover:text-primary transition-colors">Custom Golf Bags</a></li>
-                    </ul>
+                    <h3 class="text-lg font-bold mb-4" data-lang-key="our_products">Our Products</h3>
+                        <ul class="space-y-3">
+                            <li><a href="products.html" class="hover:text-primary transition-colors" data-lang-key="product_type_cart">Cart Bags</a></li>
+                            <li><a href="products.html" class="hover:text-primary transition-colors" data-lang-key="product_type_stand">Stand Bags</a></li>
+                            <li><a href="products.html" class="hover:text-primary transition-colors" data-lang-key="product_type_tour">Tour Bags</a></li>
+                            <li><a href="products.html" class="hover:text-primary transition-colors" data-lang-key="product_type_carry">Carry Bags</a></li>
+                            <li><a href="products.html" class="hover:text-primary transition-colors" data-lang-key="product_type_accessories">Golf Accessories</a></li>
+                            <li><a href="products.html" class="hover:text-primary transition-colors" data-lang-key="product_type_custom">Custom Golf Bags</a></li>
+                        </ul>
                 </div>
 
                 <div>
-                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start space-x-3">
-                            <i class="fa fa-envelope-o mt-1"></i>
-                            <a href="mailto:cco@junyuanbags.com" class="hover:text-primary transition-colors">cco@junyuanbags.com</a>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <i class="fa fa-whatsapp mt-1"></i>
-                            <a href="https://wa.me/8617750020688" class="hover:text-primary transition-colors" target="_blank">+86 17750020688</a>
-                        </li>
-                        <li class="flex items-start space-x-3">
-                            <i class="fa fa-map-marker mt-1"></i>
-                            <span class="text-gray-400">Xiamen, Fujian, China</span>
-                        </li>
-                    </ul>
+                    <h3 class="text-lg font-bold mb-4" data-lang-key="contact_us">Contact Us</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start space-x-3">
+                                <i class="fa fa-envelope-o mt-1"></i>
+                                <a href="mailto:cco@junyuanbags.com" class="hover:text-primary transition-colors">cco@junyuanbags.com</a>
+                            </li>
+
+                            <li class="flex items-start space-x-3">
+                                <i class="fa fa-map-marker mt-1"></i>
+                                <span class="text-gray-400" data-lang-key="location">Xiamen, Fujian, China</span>
+                            </li>
+                        </ul>
                 </div>
             </div>
 
             <div class="border-t border-gray-800 pt-8">
                 <div class="flex flex-col md:flex-row justify-between items-center">
-                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
-                        &copy; 2023 GolfBagFactories. All rights reserved.
-                    </p>
-                    <div class="flex space-x-6">
-                        <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
-                        <a href="#" class="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
-                    </div>
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0" data-lang-key="copyright">
+                                &copy; 2023 GolfBagFactories. All rights reserved.
+                            </p>
+                            <div class="flex space-x-6">
+                                <a href="#" class="text-gray-400 hover:text-white text-sm" data-lang-key="privacy_policy">Privacy Policy</a>
+                                <a href="#" class="text-gray-400 hover:text-white text-sm" data-lang-key="terms_service">Terms of Service</a>
+                                <a href="#" class="text-gray-400 hover:text-white text-sm" data-lang-key="cookie_policy">Cookie Policy</a>
+                            </div>
                 </div>
             </div>
         </div>
