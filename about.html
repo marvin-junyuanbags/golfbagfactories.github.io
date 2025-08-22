@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about GolfBagFactories, a leading manufacturer of high-quality golf bags and accessories with over 20 years of experience.">
+    <meta name="keywords" content="about GolfBagFactories, golf bag manufacturer, company history, mission statement, team, values">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="GolfBagFactories">
+    <link rel="canonical" href="https://www.golfbagfactories.com/about">
+    <title>About GolfBagFactories | Leading Golf Bag Manufacturer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#334155',
+                        accent: '#475569',
+                        light: '#f8fafc',
+                        dark: '#0f172a'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .card-hover {
+                @apply hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+            }
+            .btn-primary {
+                @apply bg-primary hover:bg-secondary text-white px-6 py-3 rounded-full font-medium transition-colors shadow-md hover:shadow-lg;
+            }
+            .btn-secondary {
+                @apply bg-white hover:bg-gray-50 text-primary border border-primary px-6 py-3 rounded-full font-medium transition-colors;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter text-dark bg-light antialiased">
+    <!-- Header/Navigation -->
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-sm z-50 transition-all duration-300 shadow-sm">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2">
+                        <i class="fa fa-golf-ball text-primary text-2xl"></i>
+                        <span class="text-xl font-bold text-dark">GolfBagFactories</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link font-medium hover:text-primary transition-colors">Home</a>
+                    <a href="products.html" class="nav-link font-medium hover:text-primary transition-colors">Golf Bags</a>
+                    <a href="custom-solutions.html" class="nav-link font-medium hover:text-primary transition-colors">Custom Solutions</a>
+                    <a href="manufacturing.html" class="nav-link font-medium hover:text-primary transition-colors">Manufacturing</a>
+                    <a href="about.html" class="nav-link active font-medium text-primary transition-colors">About Us</a>
+                    <a href="blog.html" class="nav-link font-medium hover:text-primary transition-colors">Blog</a>
+                    <a href="contact.html" class="btn-primary">Contact Us</a>
+                </div>
+
+                <!-- Language Selector -->
+                <div class="language-selector mr-4 hidden md:block">
+                    <button id="language-toggle" class="flex items-center space-x-1 text-dark hover:text-primary transition-colors">
+                        <span class="language-name">English</span>
+                        <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="language-dropdown" class="language-dropdown">
+                        <a href="#" class="language-option active" data-lang="en">English</a>
+                        <a href="#" class="language-option" data-lang="es">Español</a>
+                        <a href="#" class="language-option" data-lang="fr">Français</a>
+                        <a href="#" class="language-option" data-lang="de">Deutsch</a>
+                        <a href="#" class="language-option" data-lang="zh">中文</a>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-dark hover:text-primary focus:outline-none transition-colors">
+                        <i class="fa fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
+            <div class="container mx-auto px-4 py-2 flex flex-col space-y-3">
+                <a href="index.html" class="font-medium py-2 hover:text-primary transition-colors">Home</a>
+                <a href="products.html" class="font-medium py-2 hover:text-primary transition-colors">Golf Bags</a>
+                <a href="custom-solutions.html" class="font-medium py-2 hover:text-primary transition-colors">Custom Solutions</a>
+                <a href="manufacturing.html" class="font-medium py-2 hover:text-primary transition-colors">Manufacturing</a>
+                <a href="about.html" class="font-medium py-2 text-primary transition-colors">About Us</a>
+                <a href="blog.html" class="font-medium py-2 hover:text-primary transition-colors">Blog</a>
+                <a href="contact.html" class="btn-primary text-center">Contact Us</a>
+                <div class="language-selector">
+                    <button id="mobile-language-toggle" class="flex items-center space-x-1 text-dark hover:text-primary transition-colors w-full justify-between">
+                        <span>Language</span>
+                        <span class="language-name">English</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb Section -->
+    <section class="pt-32 pb-6 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center space-x-2 text-sm">
+                <a href="index.html" class="text-gray-500 hover:text-primary transition-colors">Home</a>
+                <i class="fa fa-angle-right text-gray-400"></i>
+                <span class="text-primary font-medium">About Us</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 fade-in">
+                    <h1 class="text-[clamp(2rem,4vw,3rem)] font-bold text-dark mb-6">About GolfBagFactories</h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        For over 20 years, GolfBagFactories has been a leading manufacturer of high-quality golf bags and accessories. We combine traditional craftsmanship with modern technology to create exceptional products for golf brands worldwide.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="contact.html" class="btn-primary inline-flex items-center justify-center">
+                            Get to Know Us <i class="fa fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#history" class="btn-secondary inline-flex items-center justify-center">
+                            Our History <i class="fa fa-history ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 relative fade-in">
+                    <img src="images/about-hero.jpg" alt="GolfBagFactories Team" class="rounded-xl shadow-lg w-full h-auto object-cover">
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/10 rounded-xl -z-10"></div>
+                    <div class="absolute -top-6 -right-6 w-32 h-32 bg-secondary/10 rounded-xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company History Section -->
+    <section class="py-20 bg-gray-50" id="history">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4">Our Company History</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">From humble beginnings to a global manufacturing leader, our journey spans over two decades of growth and innovation.</p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-primary/10 transform -translate-x-1/2"></div>
+
+                <!-- Timeline Events -->
+                <div class="space-y-16">
+                    <!-- Event 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1 fade-in">
+                            <h3 class="text-xl font-bold mb-3">Founding Year</h3>
+                            <p class="text-gray-600">GolfBagFactories was founded in 2003 with a small team of skilled craftsmen dedicated to creating high-quality golf bags for local markets.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-24 h-24 rounded-full bg-primary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">2003</div>
+                        <div class="md:flex md:justify-start md:w-1/2 md:pl-12 order-1 md:order-2 mb-6 md:mb-0 fade-in">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white text-xl font-bold flex items-center justify-center md:hidden mx-auto">2003</div>
+                            <img src="images/history-2003.jpg" alt="Founding Year" class="rounded-lg shadow-md mt-4 md:mt-0 w-full max-w-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Event 2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:flex md:justify-end md:w-1/2 md:pr-12 order-2 md:order-1 fade-in">
+                            <img src="images/history-2008.jpg" alt="Factory Expansion" class="rounded-lg shadow-md mx-auto">
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-24 h-24 rounded-full bg-primary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">2008</div>
+                        <div class="md:w-1/2 md:pl-12 order-1 md:order-2 mb-6 md:mb-0 fade-in">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white text-xl font-bold flex items-center justify-center md:hidden mx-auto">2008</div>
+                            <h3 class="text-xl font-bold mb-3 mt-4 md:mt-0">Factory Expansion</h3>
+                            <p class="text-gray-600">We expanded our manufacturing facility to meet growing demand, investing in new equipment and hiring additional skilled workers.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1 fade-in">
+                            <h3 class="text-xl font-bold mb-3">International Expansion</h3>
+                            <p class="text-gray-600">Began exporting to North America and Europe, establishing long-term partnerships with major golf brands and retailers.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-24 h-24 rounded-full bg-primary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">2013</div>
+                        <div class="md:flex md:justify-start md:w-1/2 md:pl-12 order-1 md:order-2 mb-6 md:mb-0 fade-in">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white text-xl font-bold flex items-center justify-center md:hidden mx-auto">2013</div>
+                            <img src="images/history-2013.jpg" alt="International Expansion" class="rounded-lg shadow-md mt-4 md:mt-0 w-full max-w-md mx-auto">
+                        </div>
+                    </div>
+
+                    <!-- Event 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:flex md:justify-end md:w-1/2 md:pr-12 order-2 md:order-1 fade-in">
+                            <img src="images/history-2018.jpg" alt="Technology Upgrade" class="rounded-lg shadow-md mx-auto">
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-24 h-24 rounded-full bg-primary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">2018</div>
+                        <div class="md:w-1/2 md:pl-12 order-1 md:order-2 mb-6 md:mb-0 fade-in">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white text-xl font-bold flex items-center justify-center md:hidden mx-auto">2018</div>
+                            <h3 class="text-xl font-bold mb-3 mt-4 md:mt-0">Technology Upgrade</h3>
+                            <p class="text-gray-600">Completed a major technology upgrade, implementing advanced manufacturing processes and quality control systems.</p>
+                        </div>
+                    </div>
+
+                    <!-- Event 5 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right order-2 md:order-1 fade-in">
+                            <h3 class="text-xl font-bold mb-3">Sustainability Initiative</h3>
+                            <p class="text-gray-600">Launched our sustainability initiative, introducing eco-friendly materials and implementing green manufacturing practices.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center w-24 h-24 rounded-full bg-primary text-white text-xl font-bold absolute left-1/2 transform -translate-x-1/2">2023</div>
+                        <div class="md:flex md:justify-start md:w-1/2 md:pl-12 order-1 md:order-2 fade-in">
+                            <div class="w-16 h-16 rounded-full bg-primary text-white text-xl font-bold flex items-center justify-center md:hidden mx-auto">2023</div>
+                            <img src="images/history-2023.jpg" alt="Sustainability Initiative" class="rounded-lg shadow-md mt-4 md:mt-0 w-full max-w-md mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Mission, Vision & Values Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4">Our Mission, Vision & Values</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Guiding principles that drive everything we do at GolfBagFactories.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Mission -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md fade-in">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-bullseye text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Our Mission</h3>
+                    <p class="text-gray-600">To provide premium quality golf bags and accessories that exceed customer expectations through innovation, craftsmanship, and exceptional service.</p>
+                </div>
+
+                <!-- Vision -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md fade-in">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-eye text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Our Vision</h3>
+                    <p class="text-gray-600">To be the global leader in golf bag manufacturing, recognized for our quality, innovation, and commitment to customer success.</p>
+                </div>
+
+                <!-- Values -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md fade-in">
+                    <div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fa fa-heart text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Our Values</h3>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Quality Excellence</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Customer Focus</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Innovation</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Integrity</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Teamwork</span>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <i class="fa fa-check text-primary"></i>
+                            <span>Sustainability</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4">Meet Our Team</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Our dedicated team of professionals brings decades of experience to the golf bag manufacturing industry.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Team Member 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-md fade-in">
+                    <div class="overflow-hidden rounded-lg mb-4">
+                        <img src="images/team-member-1.jpg" alt="John Smith" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">John Smith</h3>
+                    <p class="text-primary mb-3">Founder & CEO</p>
+                    <p class="text-gray-600 text-sm mb-4">With over 25 years of experience in the golf industry, John leads our company with vision and expertise.</p>
+                    <div class="flex space-x-3">
+                        <a href="https://www.linkedin.com" class="text-gray-500 hover:text-primary transition-colors" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:john.smith@golfbagfactories.com" class="text-gray-500 hover:text-primary transition-colors">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-md fade-in">
+                    <div class="overflow-hidden rounded-lg mb-4">
+                        <img src="images/team-member-2.jpg" alt="Sarah Johnson" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Sarah Johnson</h3>
+                    <p class="text-primary mb-3">Design Director</p>
+                    <p class="text-gray-600 text-sm mb-4">Award-winning designer with 15 years of experience creating innovative golf bag designs.</p>
+                    <div class="flex space-x-3">
+                        <a href="https://www.linkedin.com" class="text-gray-500 hover:text-primary transition-colors" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:sarah.johnson@golfbagfactories.com" class="text-gray-500 hover:text-primary transition-colors">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-md fade-in">
+                    <div class="overflow-hidden rounded-lg mb-4">
+                        <img src="images/team-member-3.jpg" alt="Michael Chen" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Michael Chen</h3>
+                    <p class="text-primary mb-3">Production Manager</p>
+                    <p class="text-gray-600 text-sm mb-4">Oversees our manufacturing processes with a focus on quality control and efficiency.</p>
+                    <div class="flex space-x-3">
+                        <a href="https://www.linkedin.com" class="text-gray-500 hover:text-primary transition-colors" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:michael.chen@golfbagfactories.com" class="text-gray-500 hover:text-primary transition-colors">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-md fade-in">
+                    <div class="overflow-hidden rounded-lg mb-4">
+                        <img src="images/team-member-4.jpg" alt="Emma Williams" class="w-full h-64 object-cover transition-transform duration-500 hover:scale-105">
+                    </div>
+                    <h3 class="text-xl font-bold mb-1">Emma Williams</h3>
+                    <p class="text-primary mb-3">Sales Director</p>
+                    <p class="text-gray-600 text-sm mb-4">Leads our global sales team, building strong relationships with clients worldwide.</p>
+                    <div class="flex space-x-3">
+                        <a href="https://www.linkedin.com" class="text-gray-500 hover:text-primary transition-colors" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:emma.williams@golfbagfactories.com" class="text-gray-500 hover:text-primary transition-colors">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold text-dark mb-4">Our Certifications</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">We are committed to maintaining the highest standards in quality, safety, and environmental responsibility.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Certification 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl flex items-center justify-center h-32 shadow-sm fade-in">
+                    <img src="images/iso-9001.png" alt="ISO 9001 Certification" class="max-h-20 max-w-full object-contain">
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl flex items-center justify-center h-32 shadow-sm fade-in">
+                    <img src="images/bsci.png" alt="BSCI Certification" class="max-h-20 max-w-full object-contain">
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl flex items-center justify-center h-32 shadow-sm fade-in">
+                    <img src="images/sedex.png" alt="SEDEX Certification" class="max-h-20 max-w-full object-contain">
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl flex items-center justify-center h-32 shadow-sm fade-in">
+                    <img src="images/oeko-tex.png" alt="OEKO-TEX Certification" class="max-h-20 max-w-full object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Partner with a Trusted Golf Bag Manufacturer</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Join the many global brands that trust us to manufacture their premium golf bags and accessories.</p>
+            <a href="contact.html" class="bg-white text-primary hover:bg-gray-100 px-8 py-3 rounded-full font-bold transition-colors shadow-lg inline-block">
+                Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <i class="fa fa-golf-ball text-primary text-2xl"></i>
+                        <span class="text-xl font-bold">GolfBagFactories</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Professional manufacturer of high-quality golf bags and accessories with OEM/ODM services for brands worldwide.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.pinterest.com/keepperfectgolf/" class="social-icon" target="_blank">
+                            <i class="fa fa-pinterest"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" class="social-icon" target="_blank">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://www.twitter.com/" class="social-icon" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="social-icon" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Golf Bags</a></li>
+                        <li><a href="custom-solutions.html" class="hover:text-primary transition-colors">Custom Solutions</a></li>
+                        <li><a href="manufacturing.html" class="hover:text-primary transition-colors">Manufacturing</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="blog.html" class="hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Our Products</h3>
+                    <ul class="space-y-3">
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Cart Bags</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Stand Bags</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Tour Bags</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Carry Bags</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Golf Accessories</a></li>
+                        <li><a href="products.html" class="hover:text-primary transition-colors">Custom Golf Bags</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-envelope-o mt-1"></i>
+                            <a href="mailto:cco@junyuanbags.com" class="hover:text-primary transition-colors">cco@junyuanbags.com</a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-whatsapp mt-1"></i>
+                            <a href="https://wa.me/8617750020688" class="hover:text-primary transition-colors" target="_blank">+86 17750020688</a>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fa fa-map-marker mt-1"></i>
+                            <span class="text-gray-400">Xiamen, Fujian, China</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2023 GolfBagFactories. All rights reserved.
+                    </p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-white text-sm">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform transition-transform duration-300 scale-0 hover:bg-secondary">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

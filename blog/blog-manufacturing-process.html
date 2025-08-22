@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behind the Scenes: The Golf Bag Manufacturing Process in 2023</title>
+    <meta name="description" content="Take an exclusive look at how premium golf bags are crafted, from design concept to final production, and discover what sets high-quality manufacturing apart.">
+    <meta name="keywords" content="golf bag manufacturing, production process, quality control, design to delivery, materials sourcing, craftsmanship">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="GolfBagFactories Team">
+    <link rel="canonical" href="https://golfbagfactories.com/blog/manufacturing-process">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#f97316',
+                        dark: '#1e293b',
+                        light: '#f8fafc',
+                        'gray-light': '#f1f5f9',
+                        'gray-dark': '#475569',
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 0.6s ease-out forwards'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .card-hover {
+                @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+            }
+            .nav-link {
+                @apply relative inline-block;
+            }
+            .nav-link::after {
+                @apply content-[''] absolute w-0 h-0.5 bg-primary left-0 bottom-0 transition-all duration-300;
+            }
+            .nav-link:hover::after {
+                @apply w-full;
+            }
+            .btn-primary {
+                @apply bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+            }
+            .btn-secondary {
+                @apply bg-white hover:bg-gray-100 text-dark font-medium py-3 px-6 rounded-lg border border-gray-200 transition-all duration-300 hover:shadow-md;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark">
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <i class="fa fa-shopping-bag text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-dark">GolfBagFactories</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex space-x-8">
+                    <a href="../index.html" class="nav-link font-medium text-dark hover:text-primary transition-colors">Home</a>
+                    <a href="../products.html" class="nav-link font-medium text-dark hover:text-primary transition-colors">Products</a>
+                    <a href="../services.html" class="nav-link font-medium text-dark hover:text-primary transition-colors">Services</a>
+                    <a href="../about.html" class="nav-link font-medium text-dark hover:text-primary transition-colors">About</a>
+                    <a href="../blog.html" class="nav-link font-medium text-primary border-b-2 border-primary pb-1">Blog</a>
+                    <a href="../contact.html" class="nav-link font-medium text-dark hover:text-primary transition-colors">Contact</a>
+                </nav>
+                
+                <!-- Contact Button -->
+                <a href="../contact.html" class="hidden md:block btn-primary">
+                    Get a Quote
+                </a>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark text-xl">
+                    <i class="fa fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="container mx-auto px-4 py-3 space-y-3">
+                <a href="../index.html" class="block font-medium text-dark hover:text-primary transition-colors py-2">Home</a>
+                <a href="../products.html" class="block font-medium text-dark hover:text-primary transition-colors py-2">Products</a>
+                <a href="../services.html" class="block font-medium text-dark hover:text-primary transition-colors py-2">Services</a>
+                <a href="../about.html" class="block font-medium text-dark hover:text-primary transition-colors py-2">About</a>
+                <a href="../blog.html" class="block font-medium text-primary py-2">Blog</a>
+                <a href="../contact.html" class="block font-medium text-dark hover:text-primary transition-colors py-2">Contact</a>
+                <a href="../contact.html" class="block btn-primary text-center">
+                    Get a Quote
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="container mx-auto px-4 py-12">
+        <!-- Breadcrumb Navigation -->
+        <div class="flex items-center text-sm text-gray-dark mb-8">
+            <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+            <i class="fa fa-chevron-right mx-2 text-xs"></i>
+            <a href="../blog.html" class="hover:text-primary transition-colors">Blog</a>
+            <i class="fa fa-chevron-right mx-2 text-xs"></i>
+            <span class="text-dark font-medium">Manufacturing Process</span>
+        </div>
+
+        <!-- Blog Article -->
+        <div class="lg:flex lg:space-x-12">
+            <!-- Main Article Content -->
+            <div class="lg:w-2/3">
+                <article class="bg-white rounded-xl shadow-md p-8 mb-12">
+                    <!-- Article Header -->
+                    <header class="mb-8">
+                        <div class="flex items-center text-sm text-gray-dark mb-4">
+                            <span class="flex items-center mr-6">
+                                <i class="fa fa-calendar-o mr-2"></i> July 5, 2023
+                            </span>
+                            <span class="flex items-center">
+                                <i class="fa fa-folder-o mr-2"></i> Manufacturing
+                            </span>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl font-bold mb-6 leading-tight text-balance">Behind the Scenes: The Golf Bag Manufacturing Process in 2023</h1>
+                        <div class="flex items-center mb-6">
+                            <img src="https://picsum.photos/id/64/100/100" alt="Author" class="w-12 h-12 rounded-full mr-4 object-cover">
+                            <div>
+                                <h3 class="font-medium">The GolfBagFactories Team</h3>
+                                <p class="text-sm text-gray-dark">Golf Industry Experts</p>
+                            </div>
+                        </div>
+                        <img src="https://picsum.photos/id/301/1200/600" alt="Golf bag production line with workers" class="w-full h-64 md:h-80 object-cover rounded-lg mb-6">
+                        <p class="text-lg text-gray-dark italic">Take an exclusive look at how premium golf bags are crafted, from design concept to final production, and discover what sets high-quality manufacturing apart.</p>
+                    </header>
+
+                    <!-- Table of Contents (mobile) -->
+                    <div class="lg:hidden mb-10 p-6 bg-gray-light rounded-lg">
+                        <h3 class="text-lg font-bold mb-4 flex items-center">
+                            <i class="fa fa-list-ul mr-2 text-primary"></i> In This Article
+                        </h3>
+                        <ul class="space-y-2">
+                            <li><a href="#design-phase" class="hover:text-primary transition-colors">The Design Phase</a></li>
+                            <li><a href="#materials-sourcing" class="hover:text-primary transition-colors">Materials Sourcing and Selection</a></li>
+                            <li><a href="#cutting-fabric" class="hover:text-primary transition-colors">Cutting and Preparing the Fabric</a></li>
+                            <li><a href="#assembly-process" class="hover:text-primary transition-colors">The Assembly Process</a></li>
+                            <li><a href="#branding-application" class="hover:text-primary transition-colors">Branding and Finishing Touches</a></li>
+                            <li><a href="#quality-control" class="hover:text-primary transition-colors">Quality Control and Testing</a></li>
+                            <li><a href="#packaging-shipping" class="hover:text-primary transition-colors">Packaging and Shipping</a></li>
+                            <li><a href="#innovation" class="hover:text-primary transition-colors">Innovation in Modern Golf Bag Manufacturing</a></li>
+                            <li><a href="#conclusion" class="hover:text-primary transition-colors">Conclusion: The Art and Science of Golf Bag Making</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Article Content -->
+                    <div class="prose prose-lg max-w-none">
+                        <p>Have you ever wondered what goes into creating the high-quality golf bags used by professionals and enthusiasts alike? The manufacturing process combines traditional craftsmanship with modern technology to produce durable, functional, and stylish products that stand up to the rigors of the game.</p>
+
+                        <h2 id="design-phase" class="text-2xl font-bold mt-10 mb-6">The Design Phase</h2>
+                        <p>Every great golf bag begins with a vision. The design phase is where concepts take shape and functional requirements are translated into tangible plans:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Concept Development</strong>: Designers brainstorm ideas based on market research, customer feedback, and emerging trends.</li>
+                            <li><strong>Functional Planning</strong>: Determining the number of pockets, strap configurations, weight distribution, and other functional elements.</li>
+                            <li><strong>Material Selection</strong>: Choosing fabrics, hardware, and other components that balance durability, weight, and aesthetics.</li>
+                            <li><strong>Digital Prototyping</strong>: Using CAD software to create detailed 3D models and technical drawings.</li>
+                            <li><strong>Physical Prototyping</strong>: Creating sample bags to test design concepts and make necessary adjustments.</li>
+                        </ul>
+
+                        <img src="https://picsum.photos/id/302/1000/500" alt="Golf bag design sketches and prototypes" class="w-full h-auto rounded-lg my-8">
+
+                        <h2 id="materials-sourcing" class="text-2xl font-bold mt-10 mb-6">Materials Sourcing and Selection</h2>
+                        <p>The quality of a golf bag is heavily dependent on the materials used. Reputable manufacturers carefully source materials from trusted suppliers:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Fabrics</strong>: Common materials include nylon, polyester, canvas, and increasingly, sustainable and recycled options.</li>
+                            <li><strong>Frame Materials</strong>: Aluminum and lightweight metals for structural support.</li>
+                            <li><strong>Hardware</strong>: Zippers, buckles, clasps, and other metal or plastic components.</li>
+                            <li><strong>Padding and Linings</strong>: Foam, mesh, and other materials for comfort and protection.</li>
+                            <li><strong>Straps</strong>: Nylon webbing with padding for comfortable carrying.</li>
+                        </ul>
+                        <p>Modern manufacturers are also placing greater emphasis on sustainable materials, such as recycled polyester and organic cotton, to reduce environmental impact.</p>
+
+                        <div class="my-8 p-6 bg-blue-50 border-l-4 border-primary rounded-r">
+                            <h4 class="font-bold mb-2">Quality Materials Make a Difference</h4>
+                            <p>Investing in high-quality materials may increase initial costs, but it results in golf bags that are more durable, perform better, and maintain their appearance over time, providing better value for both brands and end consumers.</p>
+                        </div>
+
+                        <h2 id="cutting-fabric" class="text-2xl font-bold mt-10 mb-6">Cutting and Preparing the Fabric</h2>
+                        <p>Once materials are selected, the manufacturing process moves to the cutting phase:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Pattern Layout</strong>: Optimizing fabric usage by strategically placing pattern pieces.</li>
+                            <li><strong>Computer-Aided Cutting</strong>: Using precision cutting machines to ensure accuracy and consistency.</li>
+                            <li><strong>Manual Cutting</strong>: For specialized or small-batch production runs requiring detailed craftsmanship.</li>
+                            <li><strong>Edge Treatment</strong>: Sealing or finishing raw edges to prevent fraying and increase durability.</li>
+                        </ul>
+
+                        <h2 id="assembly-process" class="text-2xl font-bold mt-10 mb-6">The Assembly Process</h2>
+                        <p>The assembly phase is where all components come together to form the finished product:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Frame Construction</strong>: Building the internal structure that provides shape and support.</li>
+                            <li><strong>Panel Assembly</strong>: Sewing together the main body panels of the bag.</li>
+                            <li><strong>Pocket Creation</strong>: Constructing and attaching various pockets and compartments.</li>
+                            <li><strong>Strap Installation</strong>: Attaching shoulder straps, carry handles, and other carrying components.</li>
+                            <li><strong>Hardware Attachment</strong>: Installing zippers, buckles, and other hardware components.</li>
+                            <li><strong>Lining Installation</strong>: Adding interior linings for protection and a finished look.</li>
+                        </ul>
+
+                        <img src="https://picsum.photos/id/203/1000/500" alt="Golf bag assembly process" class="w-full h-auto rounded-lg my-8">
+
+                        <h2 id="branding-application" class="text-2xl font-bold mt-10 mb-6">Branding and Finishing Touches</h2>
+                        <p>After the basic structure is complete, the golf bag receives its branding and final details:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Logo Application</strong>: Applying brand logos through embroidery, screen printing, or other methods.</li>
+                            <li><strong>Custom Details</strong>: Adding unique design elements specific to the brand or model.</li>
+                            <li><strong>Labeling</strong>: Attaching care instructions, warranty information, and other required labels.</li>
+                            <li><strong>Final Inspection</strong>: Checking for any defects or inconsistencies in the finished product.</li>
+                        </ul>
+
+                        <h2 id="quality-control" class="text-2xl font-bold mt-10 mb-6">Quality Control and Testing</h2>
+                        <p>Reputable manufacturers implement rigorous quality control processes to ensure every golf bag meets the highest standards:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Visual Inspection</strong>: Checking for stitching errors, material defects, and cosmetic issues.</li>
+                            <li><strong>Functional Testing</strong>: Ensuring zippers, buckles, and other hardware operate smoothly.</li>
+                            <li><strong>Durability Testing</strong>: Subjecting bags to simulated wear and tear to assess longevity.</li>
+                            <li><strong>Weight and Balance Checks</strong>: Verifying that the bag meets specifications for weight and balance.</li>
+                            <li><strong>Performance Testing</strong>: Evaluating how the bag performs in real-world golfing conditions.</li>
+                        </ul>
+
+                        <h2 id="packaging-shipping" class="text-2xl font-bold mt-10 mb-6">Packaging and Shipping</h2>
+                        <p>Once a golf bag passes all quality control checks, it's prepared for shipment to customers:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Protective Packaging</strong>: Wrapping bags to prevent damage during transit.</li>
+                            <li><strong>Boxing or Bagging</strong>: Placing the finished product in appropriate containers for shipping.</li>
+                            <li><strong>Labeling and Documentation</strong>: Adding shipping labels and necessary documentation.</li>
+                            <li><strong>Logistics Coordination</strong>: Arranging transportation to distributors or directly to customers.</li>
+                            <li><strong>Tracking and Delivery Confirmation</strong>: Providing customers with shipment tracking information.</li>
+                        </ul>
+
+                        <h2 id="innovation" class="text-2xl font-bold mt-10 mb-6">Innovation in Modern Golf Bag Manufacturing</h2>
+                        <p>The golf bag manufacturing industry continues to evolve with new technologies and processes:</p>
+                        <ul class="list-disc pl-6 space-y-3 my-4">
+                            <li><strong>Automation</strong>: Increasing use of automated sewing and cutting machines for greater precision and efficiency.</li>
+                            <li><strong>3D Printing</strong>: Prototyping and even producing certain components using 3D printing technology.</li>
+                            <li><strong>Sustainability Initiatives</strong>: Implementing eco-friendly manufacturing processes and materials.</li>
+                            <li><strong>Smart Technology Integration</strong>: Adding features like built-in GPS, RFID tags, and charging ports.</li>
+                            <li><strong>Customization Options</strong>: Offering more personalized and made-to-order options for customers.</li>
+                        </ul>
+
+                        <h2 id="conclusion" class="text-2xl font-bold mt-10 mb-6">Conclusion: The Art and Science of Golf Bag Making</h2>
+                        <p>The manufacturing of a high-quality golf bag is a complex process that combines artistry, engineering, and attention to detail. From the initial design concept to the final product, each step requires skill, precision, and a commitment to excellence.</p>
+                        <p>Understanding this process can help brands make informed decisions when selecting a manufacturing partner and can give golfers a greater appreciation for the craftsmanship that goes into their equipment.</p>
+                        <p>At GolfBagFactories, we pride ourselves on our rigorous manufacturing processes and our dedication to producing the highest quality golf bags for brands worldwide. Our combination of traditional craftsmanship and modern technology ensures that every bag we produce meets the demanding requirements of today's golfers.</p>
+                    </div>
+
+                    <!-- Social Sharing -->
+                    <div class="mt-12 pt-8 border-t">
+                        <h3 class="font-medium mb-4">Share this article:</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center hover:bg-blue-700 transition-colors">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-sky-500 text-white flex items-center justify-center hover:bg-sky-600 transition-colors">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center hover:bg-red-700 transition-colors">
+                                <i class="fa fa-pinterest"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 rounded-full bg-blue-700 text-white flex items-center justify-center hover:bg-blue-800 transition-colors">
+                                <i class="fa fa-linkedin"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Related Articles -->
+                <div class="mb-12">
+                    <h2 class="text-2xl font-bold mb-8">Related Articles</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
+                            <a href="trends-in-golf-bag-design-2023.html">
+                                <img src="https://picsum.photos/id/1031/600/400" alt="Trends in golf bag design" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center text-sm text-gray-dark mb-3">
+                                        <i class="fa fa-calendar-o mr-2"></i> June 30, 2023
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 hover:text-primary transition-colors">Trends in Golf Bag Design for 2023</h3>
+                                    <p class="text-gray-dark mb-4">Discover the latest innovations and design trends that are shaping the golf bag industry this year.</p>
+                                    <span class="text-primary font-medium hover:underline">Read More</span>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="bg-white rounded-xl shadow-sm overflow-hidden card-hover">
+                            <a href="blog-sustainable-materials.html">
+                                <img src="https://picsum.photos/id/301/600/400" alt="Sustainable materials for golf bags" class="w-full h-48 object-cover">
+                                <div class="p-6">
+                                    <div class="flex items-center text-sm text-gray-dark mb-3">
+                                        <i class="fa fa-calendar-o mr-2"></i> July 15, 2023
+                                    </div>
+                                    <h3 class="text-xl font-bold mb-3 hover:text-primary transition-colors">Eco-Friendly Golf Bags: The Rise of Sustainable Materials</h3>
+                                    <p class="text-gray-dark mb-4">Learn how sustainable materials are transforming golf bag manufacturing and why eco-friendly options are becoming the preferred choice for brands.</p>
+                                    <span class="text-primary font-medium hover:underline">Read More</span>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:w-1/3 mt-12 lg:mt-0">
+                <!-- Author Profile -->
+                <div class="bg-gray-light rounded-xl p-8 mb-12">
+                    <div class="text-center">
+                        <img src="https://picsum.photos/id/64/200/200" alt="GolfBagFactories Team" class="w-24 h-24 rounded-full object-cover mx-auto mb-4">
+                        <h3 class="text-xl font-bold mb-2">The GolfBagFactories Team</h3>
+                        <p class="text-gray-dark mb-4">With over 20 years of experience in golf bag manufacturing, we share our expertise and insights to help brands succeed.</p>
+                        <a href="../about.html" class="btn-primary inline-block">Learn More About Us</a>
+                    </div>
+                </div>
+
+                <!-- Table of Contents (desktop) -->
+                <div class="hidden lg:block bg-white rounded-xl shadow-sm p-8 mb-12">
+                    <h3 class="text-lg font-bold mb-4 flex items-center">
+                        <i class="fa fa-list-ul mr-2 text-primary"></i> In This Article
+                    </h3>
+                    <ul class="space-y-3">
+                        <li><a href="#design-phase" class="block hover:text-primary transition-colors">The Design Phase</a></li>
+                        <li><a href="#materials-sourcing" class="block hover:text-primary transition-colors">Materials Sourcing and Selection</a></li>
+                        <li><a href="#cutting-fabric" class="block hover:text-primary transition-colors">Cutting and Preparing the Fabric</a></li>
+                        <li><a href="#assembly-process" class="block hover:text-primary transition-colors">The Assembly Process</a></li>
+                        <li><a href="#branding-application" class="block hover:text-primary transition-colors">Branding and Finishing Touches</a></li>
+                        <li><a href="#quality-control" class="block hover:text-primary transition-colors">Quality Control and Testing</a></li>
+                        <li><a href="#packaging-shipping" class="block hover:text-primary transition-colors">Packaging and Shipping</a></li>
+                        <li><a href="#innovation" class="block hover:text-primary transition-colors">Innovation in Modern Golf Bag Manufacturing</a></li>
+                        <li><a href="#conclusion" class="block hover:text-primary transition-colors">Conclusion: The Art and Science of Golf Bag Making</a></li>
+                    </ul>
+                </div>
+
+                <!-- Popular Articles -->
+                <div class="bg-white rounded-xl shadow-sm p-8 mb-12">
+                    <h3 class="text-lg font-bold mb-6 flex items-center">
+                        <i class="fa fa-fire mr-2 text-secondary"></i> Popular Articles
+                    </h3>
+                    
+                    <!-- Popular Article 1 -->
+                    <div class="flex gap-4 mb-6">
+                        <img src="https://picsum.photos/id/102/200/200" alt="Golf bag care tips" class="w-20 h-20 rounded-lg object-cover">
+                        <div>
+                            <h4 class="font-bold mb-1 hover:text-primary transition-colors">
+                                <a href="#">Essential Golf Bag Care Tips for Longevity</a>
+                            </h4>
+                            <div class="text-sm text-gray-dark">
+                                <span><i class="fa fa-calendar-o mr-1"></i> May 22, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Popular Article 2 -->
+                    <div class="flex gap-4 mb-6">
+                        <img src="https://picsum.photos/id/103/200/200" alt="Choosing the right golf bag" class="w-20 h-20 rounded-lg object-cover">
+                        <div>
+                            <h4 class="font-bold mb-1 hover:text-primary transition-colors">
+                                <a href="#">How to Choose the Right Golf Bag for Your Needs</a>
+                            </h4>
+                            <div class="text-sm text-gray-dark">
+                                <span><i class="fa fa-calendar-o mr-1"></i> June 8, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Popular Article 3 -->
+                    <div class="flex gap-4">
+                        <img src="https://picsum.photos/id/104/200/200" alt="Custom golf bag design" class="w-20 h-20 rounded-lg object-cover">
+                        <div>
+                            <h4 class="font-bold mb-1 hover:text-primary transition-colors">
+                                <a href="#">The Ultimate Guide to Custom Golf Bag Design</a>
+                            </h4>
+                            <div class="text-sm text-gray-dark">
+                                <span><i class="fa fa-calendar-o mr-1"></i> June 24, 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="bg-primary/10 rounded-xl p-8">
+                    <h3 class="text-xl font-bold mb-4 text-primary">Stay Updated</h3>
+                    <p class="text-gray-dark mb-6">Subscribe to our newsletter for the latest insights, trends, and news in golf bag manufacturing.</p>
+                    <form id="newsletter-form" class="space-y-4">
+                        <div>
+                            <label for="newsletter-name" class="block text-sm font-medium mb-1">Your Name</label>
+                            <input type="text" id="newsletter-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="newsletter-email" class="block text-sm font-medium mb-1">Email Address</label>
+                            <input type="email" id="newsletter-email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-primary focus:border-primary transition-colors" placeholder="john@example.com">
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-medium py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-[1.02] hover:shadow-lg">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fa fa-shopping-bag text-primary text-2xl"></i>
+                        <span class="text-xl font-bold">GolfBagFactories</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">Premium golf bag manufacturing services for brands worldwide. Quality craftsmanship, custom designs, and competitive pricing.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html" class="text-gray-400 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="../products.html" class="text-gray-400 hover:text-primary transition-colors">Products</a></li>
+                        <li><a href="../services.html" class="text-gray-400 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="../about.html" class="text-gray-400 hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="../blog.html" class="text-gray-400 hover:text-primary transition-colors">Blog</a></li>
+                        <li><a href="../contact.html" class="text-gray-400 hover:text-primary transition-colors">Contact</a></li>
+                    </ul><p class="text-gray-400 mt-6">Premium golf bag manufacturing services for brands worldwide. Quality craftsmanship, custom designs, and competitive pricing.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Our Services</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Custom Golf Bag Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Private Label Manufacturing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Logo & Branding Application</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Quality Control & Testing</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">Global Shipping & Logistics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-primary transition-colors">After-Sales Support</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker text-primary mt-1 mr-3"></i>
+                            <span class="text-gray-400">888 Golf Avenue, Sports City, China, 518000</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-phone text-primary mr-3"></i>
+                            <span class="text-gray-400">+86 123 4567 8910</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-envelope text-primary mr-3"></i>
+                            <span class="text-gray-400">info@golfbagfactories.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 GolfBagFactories. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-primary text-sm transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 transform hover:scale-110 opacity-0 invisible z-50">
+        <i class="fa fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="../js/script.js"></script>
+    
+    <!-- Newsletter Form Validation -->
+    <script>
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('newsletter-name').value;
+            const email = document.getElementById('newsletter-email').value;
+            
+            // Basic validation
+            if (!name || !email) {
+                alert('Please fill in all fields.');
+                return;
+            }
+            
+            // Simple email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+            
+            // Success message
+            alert('Thank you for subscribing to our newsletter!');
+            this.reset();
+        });
+    </script>
+    
+    <!-- Back to Top Button Functionality -->
+    <script>
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        // Show/hide back to top button based on scroll position
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        // Smooth scroll to top when button is clicked
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    </script>
+    
+    <!-- Mobile Menu Toggle -->
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            // Toggle icon between bars and times
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-bars')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
+</body>
+</html>
