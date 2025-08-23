@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golf Bag Weight Management: Lightweight vs. Durable Options</title>
+    <meta name="description" content="Comprehensive guide to golf bag weight management, exploring the balance between lightweight design and durability for optimal performance and comfort on the course.">
+    <meta name="keywords" content="golf bag weight management, lightweight golf bags, durable golf bags, golf bag weight, golf bag weight comparison">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="GolfBagFactories Team">
+    <link rel="canonical" href="https://www.golfbagfactories.com/blog/golf-bag-weight-management">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome -->
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a', // Dark blue
+                        secondary: '#3b82f6', // Blue
+                        dark: '#1e293b',
+                        light: '#f8fafc',
+                        'gray-light': '#f1f5f9',
+                        'gray-medium': '#cbd5e1',
+                        'gray-dark': '#334155'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 0.6s ease-out forwards',
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                },
+            }
+        }
+    </script>
+    
+    <!-- Custom Utilities -->
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+            .card-hover {
+                transition: all 0.3s ease;
+            }
+            .card-hover:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            }
+        }
+    </style>
+</head>
+<body class="font-inter bg-light text-dark">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="../index.html" class="flex items-center space-x-2">
+                    <i class="fa fa-golf-ball text-primary text-2xl"></i>
+                    <span class="text-xl font-bold text-primary">GolfBagFactories</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../products.html" class="nav-link">Products</a>
+                    <a href="../custom-solutions.html" class="nav-link">Custom Solutions</a>
+                    <a href="../manufacturing.html" class="nav-link">Manufacturing</a>
+                    <a href="../about.html" class="nav-link">About Us</a>
+                    <a href="../blog.html" class="nav-link active">Blog</a>
+                    <a href="../contact.html" class="btn-primary">Contact Us</a>
+                </div>
+                
+                <!-- Language Selector -->
+                <div class="hidden md:block language-selector ml-4">
+                    <button id="language-toggle" class="flex items-center space-x-1 text-gray-dark hover:text-primary transition-colors">
+                        <span class="language-name">English</span>
+                        <i class="fa fa-chevron-down text-xs"></i>
+                    </button>
+                    <div id="language-dropdown" class="language-dropdown">
+                        <a href="#" class="language-option active" data-lang="en">English</a>
+                        <a href="#" class="language-option" data-lang="es">Español</a>
+                        <a href="#" class="language-option" data-lang="fr">Français</a>
+                        <a href="#" class="language-option" data-lang="de">Deutsch</a>
+                        <a href="#" class="language-option" data-lang="zh">中文</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-primary">
+                    <i class="fa fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden bg-white shadow-lg absolute w-full left-0 top-full hidden">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="../index.html" class="nav-link">Home</a>
+                    <a href="../products.html" class="nav-link">Products</a>
+                    <a href="../custom-solutions.html" class="nav-link">Custom Solutions</a>
+                    <a href="../manufacturing.html" class="nav-link">Manufacturing</a>
+                    <a href="../about.html" class="nav-link">About Us</a>
+                    <a href="../blog.html" class="nav-link active">Blog</a>
+                    <a href="../contact.html" class="btn-primary">Contact Us</a>
+                    
+                    <!-- Mobile Language Selector -->
+                    <div class="mobile-language-selector">
+                        <button id="mobile-language-toggle" class="flex items-center justify-between w-full text-gray-dark">
+                            <span class="language-name">English</span>
+                            <i class="fa fa-chevron-down text-xs"></i>
+                        </button>
+                        <div id="mobile-language-dropdown" class="mobile-language-dropdown hidden">
+                            <a href="#" class="language-option active" data-lang="en">English</a>
+                            <a href="#" class="language-option" data-lang="es">Español</a>
+                            <a href="#" class="language-option" data-lang="fr">Français</a>
+                            <a href="#" class="language-option" data-lang="de">Deutsch</a>
+                            <a href="#" class="language-option" data-lang="zh">中文</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-24 pb-16">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Breadcrumb -->
+            <div class="flex items-center text-sm text-gray-dark mb-8">
+                <a href="../index.html" class="hover:text-primary transition-colors">Home</a>
+                <i class="fa fa-chevron-right mx-2 text-xs"></i>
+                <a href="../blog.html" class="hover:text-primary transition-colors">Blog</a>
+                <i class="fa fa-chevron-right mx-2 text-xs"></i>
+                <span class="text-primary">Golf Bag Weight Management</span>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row lg:space-x-8">
+                <!-- Article Content -->
+                <div class="lg:w-3/4">
+                    <!-- Article Header -->
+                    <div class="mb-8">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-4 leading-tight">Golf Bag Weight Management: Lightweight vs. Durable Options</h1>
+                        <div class="flex items-center text-sm text-gray-dark mb-6">
+                            <span><i class="fa fa-calendar mr-2"></i> July 5, 2023</span>
+                            <span class="mx-4">|</span>
+                            <span><i class="fa fa-user mr-2"></i> Golf Equipment Specialist</span>
+                            <span class="mx-4">|</span>
+                            <span><i class="fa fa-clock-o mr-2"></i> 10 min read</span>
+                        </div>
+                        <img src="../images/golf bag (21).jpg" alt="Lightweight vs durable golf bags" class="w-full h-auto rounded-xl shadow-md mb-8">
+                    </div>
+                    
+                    <!-- Table of Contents - Desktop -->
+                    <div class="hidden lg:block bg-gray-light p-6 rounded-xl mb-8">
+                        <h3 class="font-bold mb-4">Table of Contents</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#importance-of-weight" class="hover:text-primary transition-colors">The Importance of Golf Bag Weight</a></li>
+                            <li><a href="#average-weights" class="hover:text-primary transition-colors">Average Weights by Bag Type</a></li>
+                            <li><a href="#lightweight-advantages" class="hover:text-primary transition-colors">Advantages of Lightweight Golf Bags</a></li>
+                            <li><a href="#lightweight-limitations" class="hover:text-primary transition-colors">Limitations of Lightweight Designs</a></li>
+                            <li><a href="#durable-advantages" class="hover:text-primary transition-colors">Benefits of Durable Golf Bags</a></li>
+                            <li><a href="#striking-balance" class="hover:text-primary transition-colors">Striking the Perfect Balance</a></li>
+                            <li><a href="#weight-reduction" class="hover:text-primary transition-colors">Weight Reduction Strategies</a></li>
+                            <li><a href="#material-innovations" class="hover:text-primary transition-colors">Material Innovations in Bag Construction</a></li>
+                            <li><a href="#carrying-systems" class="hover:text-primary transition-colors">Advanced Carrying Systems</a></li>
+                            <li><a href="#weight-vs-performance" class="hover:text-primary transition-colors">Weight vs. Performance Impact</a></li>
+                            <li><a href="#brand-comparison" class="hover:text-primary transition-colors">Top Brands for Weight Management</a></li>
+                            <li><a href="#conclusion" class="hover:text-primary transition-colors">Conclusion</a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Article Body -->
+                    <article class="prose lg:prose-lg max-w-none">
+                        <p class="text-lg mb-6">Golf bag weight is a critical factor that directly impacts your comfort, endurance, and overall performance on the course. Whether you're a walking golfer who carries their bag or prefers to ride in a cart, finding the right balance between lightweight design and durability can significantly enhance your golfing experience. In this comprehensive guide, we'll explore the importance of golf bag weight management, compare lightweight and durable options, and help you make an informed decision based on your specific needs.</p>
+                        
+                        <h2 id="importance-of-weight" class="text-2xl font-bold mt-10 mb-6">The Importance of Golf Bag Weight</h2>
+                        <p>Understanding why golf bag weight matters is crucial for any golfer, regardless of skill level or playing style:</p>
+                        
+                        <div class="bg-blue-50 border-l-4 border-primary p-6 rounded-r my-8">
+                            <h3 class="font-bold mb-4">Why Weight Matters</h3>
+                            <ul class="space-y-2">
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Reduces fatigue during walking rounds</li>
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Improves posture and reduces strain on shoulders, back, and hips</li>
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Enhances mobility and flexibility during the swing</li>
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Impacts overall energy levels throughout the round</li>
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Affects club selection and accessibility during play</li>
+                            </ul>
+                        </div>
+                        
+                        <h2 id="average-weights" class="text-2xl font-bold mt-10 mb-6">Average Weights by Bag Type</h2>
+                        <p>Golf bags come in various types, each with different average weight ranges. Understanding these averages can help you set realistic expectations:</p>
+                        
+                        <div class="overflow-x-auto my-8">
+                            <table class="min-w-full bg-white border border-gray-medium">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3 px-4 border-b bg-gray-light font-bold text-left">Bag Type</th>
+                                        <th class="py-3 px-4 border-b bg-gray-light font-bold text-left">Average Weight (Empty)</th>
+                                        <th class="py-3 px-4 border-b bg-gray-light font-bold text-left">Weight with Typical Equipment</th>
+                                        <th class="py-3 px-4 border-b bg-gray-light font-bold text-left">Best For</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-3 px-4 border-b font-medium">Sunday/Ultra-Light Bag</td>
+                                        <td class="py-3 px-4 border-b">2-4 lbs (0.9-1.8 kg)</td>
+                                        <td class="py-3 px-4 border-b">8-12 lbs (3.6-5.4 kg)</td>
+                                        <td class="py-3 px-4 border-b">Quick rounds, par-3 courses, walking golfers who carry minimal equipment</td>
+                                    </tr>
+                                    <tr class="bg-gray-light/50">
+                                        <td class="py-3 px-4 border-b font-medium">Lightweight Stand Bag</td>
+                                        <td class="py-3 px-4 border-b">4-5.5 lbs (1.8-2.5 kg)</td>
+                                        <td class="py-3 px-4 border-b">15-20 lbs (6.8-9.1 kg)</td>
+                                        <td class="py-3 px-4 border-b">Walking golfers who value comfort and basic storage</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 border-b font-medium">Standard Stand Bag</td>
+                                        <td class="py-3 px-4 border-b">5.5-7 lbs (2.5-3.2 kg)</td>
+                                        <td class="py-3 px-4 border-b">20-25 lbs (9.1-11.3 kg)</td>
+                                        <td class="py-3 px-4 border-b">Walking golfers who need more storage and features</td>
+                                    </tr>
+                                    <tr class="bg-gray-light/50">
+                                        <td class="py-3 px-4 border-b font-medium">Cart Bag</td>
+                                        <td class="py-3 px-4 border-b">7-10 lbs (3.2-4.5 kg)</td>
+                                        <td class="py-3 px-4 border-b">25-35 lbs (11.3-15.9 kg)</td>
+                                        <td class="py-3 px-4 border-b">Golfers who primarily use push carts or ride in golf carts</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 border-b font-medium">Tour Bag</td>
+                                        <td class="py-3 px-4 border-b">10-12 lbs (4.5-5.4 kg)</td>
+                                        <td class="py-3 px-4 border-b">35+ lbs (15.9+ kg)</td>
+                                        <td class="py-3 px-4 border-b">Professional golfers, those who need maximum storage, or for display purposes</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h2 id="lightweight-advantages" class="text-2xl font-bold mt-10 mb-6">Advantages of Lightweight Golf Bags</h2>
+                        <p>Lightweight golf bags have gained popularity in recent years, offering several compelling benefits for golfers:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-green-100 text-green-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                        <i class="fa fa-heartbeat text-xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Reduced Physical Strain</h3>
+                                </div>
+                                <p class="text-gray-dark">Lighter bags put less stress on your body, reducing fatigue and potential injuries during long walking rounds.</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                        <i class="fa fa-bolt text-xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Improved Energy Levels</h3>
+                                </div>
+                                <p class="text-gray-dark">Carrying less weight preserves your energy for better performance throughout the entire round, especially on challenging courses.</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-purple-100 text-purple-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                        <i class="fa fa-tachometer text-xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Faster Movement</h3>
+                                </div>
+                                <p class="text-gray-dark">Lighter bags allow for quicker movement between shots, keeping up pace with playing partners and maintaining rhythm.</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="bg-orange-100 text-orange-600 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                                        <i class="fa fa-plane text-xl"></i>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Travel Convenience</h3>
+                                </div>
+                                <p class="text-gray-dark">Lightweight bags are easier to transport and often meet airline weight restrictions without incurring extra fees.</p>
+                            </div>
+                        </div>
+                        
+                        <h2 id="lightweight-limitations" class="text-2xl font-bold mt-10 mb-6">Limitations of Lightweight Designs</h2>
+                        <p>While lightweight bags offer significant advantages, they also come with some potential drawbacks to consider:</p>
+                        
+                        <div class="space-y-4 my-8">
+                            <div class="flex items-start">
+                                <div class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                </div>
+                                <div>
+                                    <strong>Reduced Durability</strong>
+                                    <p class="mt-1">Ultra-lightweight materials may sacrifice some durability, potentially leading to faster wear and tear, especially with heavy use or in extreme weather conditions.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                </div>
+                                <div>
+                                    <strong>Limited Storage</strong>
+                                    <p class="mt-1">Lightweight bags often have fewer pockets and reduced storage capacity, which may be problematic for golfers who carry multiple accessories or need specialized storage.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                </div>
+                                <div>
+                                    <strong>Less Structure</strong>
+                                    <p class="mt-1">Some lightweight bags may lack the rigidity needed to properly protect clubs, especially during transport or when stored for extended periods.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-red-100 text-red-600 rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                    <i class="fa fa-exclamation-circle"></i>
+                                </div>
+                                <div>
+                                    <strong>Higher Cost</strong>
+                                    <p class="mt-1">Premium lightweight materials and construction techniques often come at a higher price point compared to standard bags of similar quality.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2 id="durable-advantages" class="text-2xl font-bold mt-10 mb-6">Benefits of Durable Golf Bags</h2>
+                        <p>Durable golf bags offer their own set of advantages that make them a popular choice for many golfers:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                                <div class="md:flex">
+                                    <div class="md:w-1/3">
+                                        <img src="../images/golf bag (22).jpg" alt="Durable golf bag" class="h-full w-full object-cover">
+                                    </div>
+                                    <div class="p-6 md:w-2/3">
+                                        <h3 class="font-bold text-xl mb-2">Longevity</h3>
+                                        <p class="text-gray-dark text-sm mb-2">Durable bags constructed with high-quality materials can last for many years, even with frequent use in various weather conditions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                                <div class="md:flex">
+                                    <div class="md:w-1/3">
+                                        <img src="../images/golf bag (23).jpg" alt="Golf bag with storage" class="h-full w-full object-cover">
+                                    </div>
+                                    <div class="p-6 md:w-2/3">
+                                        <h3 class="font-bold text-xl mb-2">Enhanced Storage</h3>
+                                        <p class="text-gray-dark text-sm mb-2">Durable bags often feature more and larger pockets, specialized storage compartments, and better organization systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                                <div class="md:flex">
+                                    <div class="md:w-1/3">
+                                        <img src="../images/golf bag (24).jpg" alt="Golf club protection" class="h-full w-full object-cover">
+                                    </div>
+                                    <div class="p-6 md:w-2/3">
+                                        <h3 class="font-bold text-xl mb-2">Superior Club Protection</h3>
+                                        <p class="text-gray-dark text-sm mb-2">Sturdier construction provides better protection for your clubs, reducing the risk of damage during transport or play.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                                <div class="md:flex">
+                                    <div class="md:w-1/3">
+                                        <img src="../images/golf bag (25).jpg" alt="Golf bag versatility" class="h-full w-full object-cover">
+                                    </div>
+                                    <div class="p-6 md:w-2/3">
+                                        <h3 class="font-bold text-xl mb-2">Greater Versatility</h3>
+                                        <p class="text-gray-dark text-sm mb-2">Durable bags can handle a wider range of playing conditions and uses, from casual rounds to competitive play and travel.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2 id="striking-balance" class="text-2xl font-bold mt-10 mb-6">Striking the Perfect Balance</h2>
+                        <p>The key to effective golf bag weight management is finding the right balance between lightweight design and durability based on your specific needs and preferences:</p>
+                        
+                        <div class="bg-gray-light p-6 rounded-xl my-8">
+                            <h3 class="font-bold text-xl mb-4">Factors to Consider When Balancing Weight and Durability</h3>
+                            <div class="space-y-4">
+                                <div class="flex items-start">
+                                    <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                        <i class="fa fa-walking"></i>
+                                    </div>
+                                    <div>
+                                        <strong>How Often You Walk</strong>
+                                        <p class="mt-1">If you walk most rounds, prioritize lightweight design. If you primarily use a cart, durability and storage may be more important.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                        <i class="fa fa-calendar"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Playing Frequency</strong>
+                                        <p class="mt-1">Frequent golfers may benefit from a more durable bag that can withstand regular use, while occasional players might prioritize lightweight design.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                        <i class="fa fa-cubes"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Equipment Needs</strong>
+                                        <p class="mt-1">Consider how much equipment you typically carry. If you need to carry many accessories, prioritize storage and durability over absolute weight reduction.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Course Conditions</strong>
+                                        <p class="mt-1">If you play on challenging courses with rough terrain or frequently encounter inclement weather, a more durable bag may be a better investment.</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start">
+                                    <div class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center flex-shrink-0 mt-1 mr-3">
+                                        <i class="fa fa-money"></i>
+                                    </div>
+                                    <div>
+                                        <strong>Budget</strong>
+                                        <p class="mt-1">High-quality lightweight bags often come at a premium price. Determine how much you're willing to invest in a bag that meets your specific needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2 id="weight-reduction" class="text-2xl font-bold mt-10 mb-6">Weight Reduction Strategies</h2>
+                        <p>Even if you can't afford or don't want to invest in a new lightweight bag, there are several strategies you can use to reduce the overall weight you carry on the course:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                                <div class="flex justify-center mb-4">
+                                    <i class="fa fa-paint-brush text-primary text-3xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-3">Minimize Equipment</h3>
+                                <p class="text-gray-dark text-sm">Carry only the clubs and accessories you truly need for each round, avoiding unnecessary items that add weight.</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                                <div class="flex justify-center mb-4">
+                                    <i class="fa fa-tint text-primary text-3xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-3">Optimize Water Weight</h3>
+                                <p class="text-gray-dark text-sm">Carry a lightweight water bottle and only fill it as needed, rather than carrying multiple full bottles throughout the round.</p>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6 text-center">
+                                <div class="flex justify-center mb-4">
+                                    <i class="fa fa-exchange text-primary text-3xl"></i>
+                                </div>
+                                <h3 class="font-bold text-lg mb-3">Use Lighter Accessories</h3>
+                                <p class="text-gray-dark text-sm">Replace heavy accessories with lighter alternatives, such as using a lightweight rangefinder instead of a bulky one.</p>
+                            </div>
+                        </div>
+                        
+                        <h2 id="material-innovations" class="text-2xl font-bold mt-10 mb-6">Material Innovations in Bag Construction</h2>
+                        <p>Advancements in materials science have revolutionized golf bag design, allowing manufacturers to create bags that are both lightweight and durable:</p>
+                        
+                        <div class="overflow-x-auto my-8">
+                            <table class="min-w-full bg-white border border-gray-medium">
+                                <thead>
+                                    <tr>
+                                        <th class="py-3 px-4 border-b bg-gray-light font-bold text-left">Material Type</th>
+                                        <th class="py-3 px-4 border-b bg-gray-light font-bold text-left">Key Properties</th>
+                                        <th class="py-3 px-4 border-b bg-gray-light font-bold text-left">Best For</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="py-3 px-4 border-b font-medium">600D Polyester</td>
+                                        <td class="py-3 px-4 border-b">Balanced weight, durability, and cost</td>
+                                        <td class="py-3 px-4 border-b">General-purpose bags, mid-range options</td>
+                                    </tr>
+                                    <tr class="bg-gray-light/50">
+                                        <td class="py-3 px-4 border-b font-medium">1000D Polyester</td>
+                                        <td class="py-3 px-4 border-b">Heavy-duty, highly durable, slightly heavier</td>
+                                        <td class="py-3 px-4 border-b">Cart bags, tour bags, frequent use</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 border-b font-medium">Ripstop Nylon</td>
+                                        <td class="py-3 px-4 border-b">Lightweight, tear-resistant, water-resistant</td>
+                                        <td class="py-3 px-4 border-b">Lightweight stand bags, travel bags</td>
+                                    </tr>
+                                    <tr class="bg-gray-light/50">
+                                        <td class="py-3 px-4 border-b font-medium">Carbon Fiber</td>
+                                        <td class="py-3 px-4 border-b">Extremely lightweight, highly durable, expensive</td>
+                                        <td class="py-3 px-4 border-b">Premium lightweight bags, professional use</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="py-3 px-4 border-b font-medium">Kevlar</td>
+                                        <td class="py-3 px-4 border-b">Lightweight, exceptionally strong, heat-resistant</td>
+                                        <td class="py-3 px-4 border-b">High-performance bags, extreme conditions</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h2 id="carrying-systems" class="text-2xl font-bold mt-10 mb-6">Advanced Carrying Systems</h2>
+                        <p>Modern golf bags feature innovative carrying systems designed to enhance comfort and reduce the perceived weight of the bag:</p>
+                        
+                        <img src="../images/golf bag (26).jpg" alt="Golf bag carrying system" class="w-full h-auto rounded-xl shadow-md my-8">
+                        
+                        <div class="space-y-6 my-8">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h3 class="font-bold text-xl mb-4 text-primary">Dual Strap Systems</h3>
+                                <p class="mb-4">Dual strap systems distribute weight evenly across both shoulders, reducing strain and making the bag feel lighter than it actually is. Premium systems feature adjustable straps for a customized fit.</p>
+                                <div class="flex items-center text-sm text-gray-dark">
+                                    <i class="fa fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Most effective for walking rounds</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h3 class="font-bold text-xl mb-4 text-primary">Padded Back Panels</h3>
+                                <p class="mb-4">Ergonomic padded back panels conform to your body shape, improving comfort and weight distribution. Some premium models feature ventilation channels to reduce sweat buildup.</p>
+                                <div class="flex items-center text-sm text-gray-dark">
+                                    <i class="fa fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Enhances comfort during long rounds</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <h3 class="font-bold text-xl mb-4 text-primary">Weight Distribution Technology</h3>
+                                <p class="mb-4">Advanced bags feature strategically placed weight distribution systems that shift weight toward the hips rather than the shoulders, reducing strain and improving balance.</p>
+                                <div class="flex items-center text-sm text-gray-dark">
+                                    <i class="fa fa-check-circle text-green-500 mr-2"></i>
+                                    <span>Reduces perceived weight by up to 30%</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2 id="weight-vs-performance" class="text-2xl font-bold mt-10 mb-6">Weight vs. Performance Impact</h2>
+                        <p>Research has shown that golf bag weight can have a measurable impact on player performance. Understanding these effects can help you make more informed decisions:</p>
+                        
+                        <div class="bg-blue-50 border-l-4 border-primary p-6 rounded-r my-8">
+                            <h3 class="font-bold mb-4">Key Performance Findings</h3>
+                            <ul class="space-y-2">
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Golfers carrying lighter bags show less fatigue and maintain better swing mechanics throughout 18 holes</li>
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> A reduction of just 2-3 pounds in bag weight can lead to measurable improvements in driving distance and accuracy in later holes</li>
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Proper weight distribution is more important than absolute weight in terms of perceived comfort and energy conservation</li>
+                                <li><i class="fa fa-check text-green-500 mr-2"></i> Golfers using lightweight bags report higher overall satisfaction with their round experience</li>
+                            </ul>
+                        </div>
+                        
+                        <h2 id="brand-comparison" class="text-2xl font-bold mt-10 mb-6">Top Brands for Weight Management</h2>
+                        <p>Different brands have made significant strides in creating golf bags that excel in weight management while maintaining durability:</p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                        <span class="font-bold text-xl">SM</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Sun Mountain</h3>
+                                </div>
+                                <p class="text-gray-dark mb-4">Pioneers in lightweight bag design with their Four-5 stand bag weighing just 4.5 pounds while maintaining durability and storage capacity.</p>
+                                <div class="flex items-center text-xs text-gray-dark">
+                                    <span class="font-bold mr-2">Specialty:</span>
+                                    <span>Ultra-lightweight stand bags with premium materials</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                        <span class="font-bold text-xl">PI</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Ping</h3>
+                                </div>
+                                <p class="text-gray-dark mb-4">Known for their Hoofer line of stand bags that combine lightweight design with exceptional durability and comfort features.</p>
+                                <div class="flex items-center text-xs text-gray-dark">
+                                    <span class="font-bold mr-2">Specialty:</span>
+                                    <span>Balanced lightweight bags with innovative carrying systems</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                        <span class="font-bold text-xl">TM</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">TaylorMade</h3>
+                                </div>
+                                <p class="text-gray-dark mb-4">Offers the Flextech line featuring advanced weight distribution systems and carbon fiber components for reduced weight.</p>
+                                <div class="flex items-center text-xs text-gray-dark">
+                                    <span class="font-bold mr-2">Specialty:</span>
+                                    <span>Technologically advanced lightweight cart and stand bags</span>
+                                </div>
+                            </div>
+                            
+                            <div class="bg-white rounded-lg shadow-md p-6">
+                                <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mr-4">
+                                        <span class="font-bold text-xl">OG</span>
+                                    </div>
+                                    <h3 class="text-xl font-bold">Ogio</h3>
+                                </div>
+                                <p class="text-gray-dark mb-4">Known for their high-performance stand bags with specialized weight reduction technologies and ergonomic designs.</p>
+                                <div class="flex items-center text-xs text-gray-dark">
+                                    <span class="font-bold mr-2">Specialty:</span>
+                                    <span>Ergonomically optimized lightweight stand bags</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h2 id="conclusion" class="text-2xl font-bold mt-10 mb-6">Conclusion</h2>
+                        <p>Golf bag weight management is a critical consideration that can significantly impact your comfort, endurance, and overall performance on the course. By understanding the advantages and limitations of lightweight and durable bag options, you can make an informed decision based on your specific needs, playing style, and budget.</p>
+                        
+                        <p>The ideal golf bag should strike a balance between weight, durability, and functionality. For walking golfers, a lightweight stand bag between 4-5.5 pounds with proper weight distribution may be optimal. For cart users or those who need extensive storage, a durable cart bag that prioritizes organization and protection while still maintaining reasonable weight may be more suitable.</p>
+                        
+                        <p>Remember that advancements in materials and design technologies continue to push the boundaries of what's possible, allowing manufacturers to create bags that are simultaneously lighter and more durable than ever before. By carefully evaluating your options and considering the factors discussed in this guide, you can find the perfect golf bag to enhance your enjoyment of the game.</p>
+                    </article>
+                </div>
+                
+                <!-- Sidebar -->
+                <div class="lg:w-1/4">
+                    <!-- Author Bio -->
+                    <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                        <div class="flex items-center mb-4">
+                            <img src="../images/golf bag (27).jpg" alt="Author" class="w-16 h-16 rounded-full object-cover mr-4">
+                            <div>
+                                <h3 class="text-lg font-bold">Michael Chen</h3>
+                                <p class="text-sm text-gray-dark">Golf Equipment Specialist</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-dark mb-4">Michael has over 15 years of experience in the golf industry, specializing in equipment evaluation and golf bag technology. He has worked with professional golfers and major equipment manufacturers.</p>
+                        <div class="flex space-x-3">
+                            <a href="#" class="social-icon"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" class="social-icon"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Related Posts -->
+                    <div class="bg-white rounded-xl shadow-md p-6 mb-8">
+                        <h3 class="text-lg font-bold mb-4">Related Posts</h3>
+                        <div class="space-y-4">
+                            <a href="golf-bag-features-guide.html" class="block group">
+                                <div class="flex items-start">
+                                    <img src="../images/golf bag (28).jpg" alt="Golf bag features" class="w-20 h-20 object-cover rounded-lg mr-3 group-hover:opacity-90 transition-opacity">
+                                    <div>
+                                        <h4 class="font-medium group-hover:text-primary transition-colors">Golf Bag Features Every Golfer Needs: Essential vs. Luxury Options</h4>
+                                        <p class="text-sm text-gray-dark mt-1">June 26, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="golf-bag-buying-guide.html" class="block group">
+                                <div class="flex items-start">
+                                    <img src="../images/golf bag (29).jpg" alt="Golf bag buying guide" class="w-20 h-20 object-cover rounded-lg mr-3 group-hover:opacity-90 transition-opacity">
+                                    <div>
+                                        <h4 class="font-medium group-hover:text-primary transition-colors">Ultimate Golf Bag Buying Guide: Expert Tips & Recommendations</h4>
+                                        <p class="text-sm text-gray-dark mt-1">June 15, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="golf-bag-types-comparison.html" class="block group">
+                                <div class="flex items-start">
+                                    <img src="../images/golf bag (30).jpg" alt="Golf bag types" class="w-20 h-20 object-cover rounded-lg mr-3 group-hover:opacity-90 transition-opacity">
+                                    <div>
+                                        <h4 class="font-medium group-hover:text-primary transition-colors">Golf Bag Types Comparison: Which One is Right For You?</h4>
+                                        <p class="text-sm text-gray-dark mt-1">June 20, 2023</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Signup -->
+                    <div class="bg-primary rounded-xl p-6 text-white">
+                        <h3 class="text-lg font-bold mb-4">Subscribe to Our Newsletter</h3>
+                        <p class="mb-4">Get expert tips on golf equipment, custom bag options, and exclusive offers delivered straight to your inbox.</p>
+                        <form>
+                            <div class="mb-3">
+                                <input type="email" placeholder="Your email address" class="w-full px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary">
+                            </div>
+                            <button type="submit" class="w-full bg-white text-primary font-medium py-2 px-4 rounded-lg hover:bg-gray-100 transition-colors">Subscribe Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Mobile Table of Contents -->
+    <div class="lg:hidden fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
+        <button id="mobile-toc-button" class="bg-primary text-white font-medium py-3 px-6 rounded-full shadow-lg flex items-center space-x-2">
+            <i class="fa fa-list"></i>
+            <span>Table of Contents</span>
+        </button>
+    </div>
+    
+    <div id="mobile-toc" class="fixed inset-0 bg-black/70 z-50 hidden">
+        <div class="bg-white h-full w-3/4 max-w-sm p-6 overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-primary">Table of Contents</h3>
+                <button id="close-mobile-toc" class="text-gray-dark hover:text-primary transition-colors">
+                    <i class="fa fa-times text-xl"></i>
+                </button>
+            </div>
+            <ul class="space-y-3">
+                <li><a href="#importance-of-weight" class="block py-2 hover:text-primary transition-colors">The Importance of Golf Bag Weight</a></li>
+                <li><a href="#average-weights" class="block py-2 hover:text-primary transition-colors">Average Weights by Bag Type</a></li>
+                <li><a href="#lightweight-advantages" class="block py-2 hover:text-primary transition-colors">Advantages of Lightweight Golf Bags</a></li>
+                <li><a href="#lightweight-limitations" class="block py-2 hover:text-primary transition-colors">Limitations of Lightweight Designs</a></li>
+                <li><a href="#durable-advantages" class="block py-2 hover:text-primary transition-colors">Benefits of Durable Golf Bags</a></li>
+                <li><a href="#striking-balance" class="block py-2 hover:text-primary transition-colors">Striking the Perfect Balance</a></li>
+                <li><a href="#weight-reduction" class="block py-2 hover:text-primary transition-colors">Weight Reduction Strategies</a></li>
+                <li><a href="#material-innovations" class="block py-2 hover:text-primary transition-colors">Material Innovations in Bag Construction</a></li>
+                <li><a href="#carrying-systems" class="block py-2 hover:text-primary transition-colors">Advanced Carrying Systems</a></li>
+                <li><a href="#weight-vs-performance" class="block py-2 hover:text-primary transition-colors">Weight vs. Performance Impact</a></li>
+                <li><a href="#brand-comparison" class="block py-2 hover:text-primary transition-colors">Top Brands for Weight Management</a></li>
+                <li><a href="#conclusion" class="block py-2 hover:text-primary transition-colors">Conclusion</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-6 right-6 bg-primary text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 z-40">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <i class="fa fa-golf-ball text-2xl"></i>
+                        <span class="text-xl font-bold">GolfBagFactories</span>
+                    </div>
+                    <p class="text-gray-300 mb-6">Leading manufacturer of premium golf bags, offering custom solutions for golfers and brands worldwide.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fa fa-instagram"></i></a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li><a href="../index.html" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="../products.html" class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="../custom-solutions.html" class="text-gray-300 hover:text-white transition-colors">Custom Solutions</a></li>
+                        <li><a href="../manufacturing.html" class="text-gray-300 hover:text-white transition-colors">Manufacturing</a></li>
+                        <li><a href="../about.html" class="text-gray-300 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="../blog.html" class="text-gray-300 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="../contact.html" class="text-gray-300 hover:text-white transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Our Products</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Stand Bags</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Cart Bags</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Tour Bags</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Sunday Bags</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Waterproof Bags</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors">Custom Designed Bags</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-6">Contact Us</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fa fa-map-marker mt-1 mr-3"></i>
+                            <span>123 Golf Avenue, Sportsville, CA 90210, United States</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-phone mt-1 mr-3"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-envelope mt-1 mr-3"></i>
+                            <span>info@golfbagfactories.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-clock-o mt-1 mr-3"></i>
+                            <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-300 mb-4 md:mb-0">&copy; 2023 GolfBagFactories. All rights reserved.</p>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Privacy Policy</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Terms of Service</a>
+                        <a href="#" class="text-gray-300 hover:text-white transition-colors">Cookie Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    
+    <!-- Initialize fade-in animations for elements with 'fade-in' class -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+            
+            // Language dropdown toggle
+            const languageToggle = document.getElementById('language-toggle');
+            const languageDropdown = document.getElementById('language-dropdown');
+            
+            if (languageToggle && languageDropdown) {
+                languageToggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    languageDropdown.classList.toggle('hidden');
+                });
+            }
+            
+            // Mobile language dropdown toggle
+            const mobileLanguageToggle = document.getElementById('mobile-language-toggle');
+            const mobileLanguageDropdown = document.getElementById('mobile-language-dropdown');
+            
+            if (mobileLanguageToggle && mobileLanguageDropdown) {
+                mobileLanguageToggle.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                    mobileLanguageDropdown.classList.toggle('hidden');
+                });
+            }
+            
+            // Mobile TOC toggle
+            const mobileTocButton = document.getElementById('mobile-toc-button');
+            const mobileToc = document.getElementById('mobile-toc');
+            const closeMobileToc = document.getElementById('close-mobile-toc');
+            
+            if (mobileTocButton && mobileToc && closeMobileToc) {
+                mobileTocButton.addEventListener('click', function() {
+                    mobileToc.classList.remove('hidden');
+                });
+                
+                closeMobileToc.addEventListener('click', function() {
+                    mobileToc.classList.add('hidden');
+                });
+                
+                mobileToc.addEventListener('click', function(e) {
+                    if (e.target === mobileToc) {
+                        mobileToc.classList.add('hidden');
+                    }
+                });
+                
+                // Close mobile TOC when clicking on a link
+                const mobileTocLinks = mobileToc.querySelectorAll('a');
+                mobileTocLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        mobileToc.classList.add('hidden');
+                    });
+                });
+            }
+            
+            // Back to top button
+            const backToTopButton = document.getElementById('back-to-top');
+            
+            if (backToTopButton) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 300) {
+                        backToTopButton.classList.remove('opacity-0', 'invisible');
+                        backToTopButton.classList.add('opacity-100', 'visible');
+                    } else {
+                        backToTopButton.classList.remove('opacity-100', 'visible');
+                        backToTopButton.classList.add('opacity-0', 'invisible');
+                    }
+                });
+                
+                backToTopButton.addEventListener('click', function() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+            
+            // Navbar scroll effect
+            const navbar = document.getElementById('navbar');
+            
+            if (navbar) {
+                window.addEventListener('scroll', function() {
+                    if (window.pageYOffset > 50) {
+                        navbar.classList.add('shadow-md');
+                        navbar.classList.remove('py-4');
+                        navbar.classList.add('py-3');
+                    } else {
+                        navbar.classList.remove('shadow-md');
+                        navbar.classList.remove('py-3');
+                        navbar.classList.add('py-4');
+                    }
+                });
+            }
+            
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', function() {
+                if (languageDropdown && !languageDropdown.classList.contains('hidden')) {
+                    languageDropdown.classList.add('hidden');
+                }
+                
+                if (mobileLanguageDropdown && !mobileLanguageDropdown.classList.contains('hidden')) {
+                    mobileLanguageDropdown.classList.add('hidden');
+                }
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80, // Adjust for fixed navbar
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Initialize fade-in animations
+            const fadeElements = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            fadeElements.forEach(element => {
+                element.style.opacity = '0';
+                element.style.transform = 'translateY(20px)';
+                element.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(element);
+            });
+        });
+    </script>
+</body>
+</html>
